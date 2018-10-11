@@ -12194,7 +12194,7 @@ The previous r-process simulations that predict those negative ages are from neu
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Fission-and-the-r-process">Fission and the <em>r</em>-process<a class="anchor-link" href="#Fission-and-the-r-process">&#182;</a></h1><center><video controls alt="test" src="./img/korobkinrh_nbs50_frdm2012_new_nseYe0350.mp4"/></center><p>Holmbeck with PRISM (T. Sprouse and M. Mumpower)</p>
 <aside class="notes">
-NSM conditions allow fission. [PLAY] Notice in this movie that material gets up to between N=184 and 200, but no further. At these masses, neutrons are more likely to induce fission than to capture, and neutron-induced fission terminates the r-process in mass. Those fission products deposit near the second r-process peak. Something really interesting can occur if the conditions are neutron-rich enough. Those fission products can themselves participate in the r-process, capture up to about N=200, and fission. And when this happens, we call this fission cycling. This can repeat and the system can undergo several fission cycles until the neutron flux falls off.
+NSM conditions allow fission. [PLAY] Notice in this movie that material gets up to between N=184 and 200, but no further. At these masses, neutrons are more likely to induce fission than to capture, and neutron-induced fission terminates the r-process in mass. Those fission products deposit near the second r-process peak. If the conditions are neutron-rich enough, those fission products can themselves participate in the r-process, capture up to about N=200, and fission. And when this happens, we call this fission cycling. This can repeat and the system can undergo several fission cycles until the neutron flux falls off.
 </aside>
 </div>
 </div>
@@ -12205,7 +12205,7 @@ NSM conditions allow fission. [PLAY] Notice in this movie that material gets up 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Do-varying-levels-of-neutron-richness-account-for-the-actinide-boost?">Do varying levels of neutron richness account for the actinide boost?<a class="anchor-link" href="#Do-varying-levels-of-neutron-richness-account-for-the-actinide-boost?">&#182;</a></h1><aside class="notes">
-Can these fission cycles be related to the actinide boost? If neutron-induced fission controls the material in that region, can we turn a knob to change the neutron richness and then get different amounts of Thorium?
+Can these fission cycles be related to the actinide boost? If neutron-induced fission controls the material in that region, can we turn a knob to change the neutron richness and then get different amounts of Thorium? 
 </aside>
 </div>
 </div>
@@ -12233,7 +12233,7 @@ To investigate this, we use PRISM: an r-process network solver written by Trevor
 <p>$Y_e$ = 0: all neutrons</p>
 <p>$Y_e$ = 1: all protons</p>
 <aside class="notes">
-For the actinide boost problem, we choose a low-entropy, NSM tidal ejecta trajectory and vary the initial electron fraction. From here on out, I'll be talking about this Y_e, the electron fraction. Y_e essentially measures the fraction of nucleons that are protons. So just remember that a lower Y_e means more neutrons, and a higher Y_e is more protons. We ran 50 separate, full r-process calculations, changing the initial Y_e between 0 and 0.25.
+For the actinide boost problem, we choose a low-entropy, NSM tidal ejecta trajectory and vary the initial electron fraction. From here on out, I'll be talking about this Y_e, the electron fraction. Y_e essentially measures the fraction of nucleons that are protons. So just remember that a lower Y_e means more neutrons, and a higher Y_e is more protons. We ran 50 separate, full r-process calculations, changing the initial Y_e between 0 and 0.25. We run each of these to 1 Gyr, so every abundance pattern I'll be showing are the final abundances at 1 Gyr.
 </aside>
 </div>
 </div>
@@ -12249,7 +12249,7 @@ So, starting at the highest Y_e of 0.25, we only make up to the second r-process
 </aside>
 </div>
 </div>
-</div></section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12262,7 +12262,7 @@ This plot is just a summary of how the Europium, Thorium, and Uranium abundances
 </aside>
 </div>
 </div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -12287,7 +12287,7 @@ Now, let's take a step back and talk about ages again. We're going to use these 
 <h1 id="The-age-of-actinide-boost-star-J0954+5246">The age of actinide-boost star J0954+5246<a class="anchor-link" href="#The-age-of-actinide-boost-star-J0954+5246">&#182;</a></h1><p><br><center><img src="./img/pr_age_J095442_0350.png" alt="Ye" style="width: 65%"></center></p>
 <p>Holmbeck+ (arXiv:1807.06662)</p>
 <aside class="notes">
-If we pick the production ratios at that low Y_e, these are the ages we get for the actinide-boost star. The low literature production ratios predict negative ages, which we saw earlier. But now, our simulations are predicting Thorium that is so high, it would take about 50 billion years to decay to what we actually observe. And notice that the three ages don't agree, which indicates that our production ratios are wrong. What went wrong? Maybe the Y_e is too low? [GO BACK 2 SLIDES] We chose a very low Y_e, but there are huge variations of the actinides at higher Y_e. So let's look at these ages across the whole Y_e range.
+If we pick the production ratios at that low Y_e, these are the ages we get for the actinide-boost star. The low literature production ratios from neutrino-driven wind and waiting point calculations predict negative ages, which we saw earlier. But now, our simulations are predicting Thorium that is so high it would take about 50 billion years to decay to what we actually observe. And notice that the three ages don't agree, which indicates that our production ratios are wrong. What went wrong? Maybe the Y_e is too low? [GO BACK 2 SLIDES] We chose a very low Y_e, but there are huge variations of the actinides at higher Y_e. So let's look at these ages across the whole Y_e range.
 </aside>
 </div>
 </div>
@@ -12374,11 +12374,14 @@ This wind component typically has higher Y_e. In this simulation, between 0.1 an
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Distribution-of-$Y_e$">Distribution of $Y_e$<a class="anchor-link" href="#Distribution-of-$Y_e$">&#182;</a></h1><p><br>
-Tidal ejecta: Bovard+ (2017)</p>
-<p>Wind: Lippuner+ (2017)</p>
-<p>$m_{\rm wind}/m_{\rm dyn}= 3$: Rosswog+ (2017), Tanaka+ (2017)</p>
+Tidal ejecta centered at $Y_e=0.16$
+<br>(Bovard+ 2017)</p>
+<p>Wind centered at $Y_e=0.22$
+<br>(Lippuner+ 2017)</p>
+<p>$m_{\rm wind}/m_{\rm dyn}= 3$
+<br>(Rosswog+ 2017; Tanaka+ 2017)</p>
 <aside class="notes">
-So we chose a distribution of Y_e, based on what we found in the literature for the tidal and wind ejecta. Since we have all these calculations run at different Y_e's, we used our higher-Y_e results as a stand-in for the wind component. Then we also chose a mass ratio of type of ejecta from literature as well. So now we have a distribution of Y_e that characterizes the NSM ejecta, and we apply that distribution to our final abundances.
+AsSo we chose a distribution of Y_e based on what we found in the literature for the tidal and wind ejecta. Since we have all these calculations run at different Y_e's, we used our higher-Y_e results as a stand-in for the wind component. Then we also chose a mass ratio of ejecta type from literature as well. Now we have a distribution of Y_e that characterizes the NSM ejecta, and we apply that distribution to our final abundances.
 </aside>
 </div>
 </div>
@@ -12414,7 +12417,7 @@ So what does this do for the ages? We went through this whole dilution process i
 <div class="text_cell_render border-box-sizing rendered_html">
 <center><img src="./img/pr_age_J095442_mix.png" alt="Ye" style="width: 65%"></center><p>Holmbeck+ (arXiv:1807.06662)</p>
 <aside class="notes">
-And this is what we get. So it's not perfect, but 15 Gyr is much better than 50. If NSM are the source of the actinide boost, we need some way to actually bring the actinide signature down in order to match observations. The mass distribution we chose was just from literature, so it could be that a different choice of mass distribution could make these ages agree perfectly. But it appears that we at least need some type of dilution scenario if we want NSMs to be the source of the actinide boost.
+And this is what we get. So it's not perfect, but 15 Gyr is much better than 50. If NSM are the source of the actinide boost, we need some way to actually bring the actinide signature down in order to match observations. The mass distribution we chose was just from literature, so it could be that a different choice of mass distribution could make these ages agree perfectly. We at least need some type of dilution scenario if we want NSMs to be the source of the actinide boost.
 </aside>
 </div>
 </div>
@@ -12425,9 +12428,22 @@ And this is what we get. So it's not perfect, but 15 Gyr is much better than 50.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1><p><br></p>
-<h3 id="We-are-conducting-a-survey-to-find-more-r-II-stars">We are conducting a survey to find more <em>r</em>-II stars<a class="anchor-link" href="#We-are-conducting-a-survey-to-find-more-r-II-stars">&#182;</a></h3><h3 id="During-this-survey,-we-found-the-most-actinide-enhanced-r-II-star-to-date">During this survey, we found <strong>the most actinide-enhanced</strong> <em>r</em>-II star to date<a class="anchor-link" href="#During-this-survey,-we-found-the-most-actinide-enhanced-r-II-star-to-date">&#182;</a></h3><h3 id="Low-$Y_e$,-low-entropy-NSM-conditions-(e.g.,-in-the-tidal-ejecta)-over-produce-the-actinides">Low-$Y_e$, low-entropy NSM conditions (e.g., in the tidal ejecta) <em>over</em>-produce the actinides<a class="anchor-link" href="#Low-$Y_e$,-low-entropy-NSM-conditions-(e.g.,-in-the-tidal-ejecta)-over-produce-the-actinides">&#182;</a></h3><h3 id="NSMs-could-be-the-source-of-the-actinide-boost-if-we-add-another-r-process-from-a-higher-$Y_e$-environment-(e.g.,-the-accretion-disk-wind)">NSMs could be the source of the actinide boost if we add another <em>r</em>-process from a higher-$Y_e$ environment (e.g., the accretion disk wind)<a class="anchor-link" href="#NSMs-could-be-the-source-of-the-actinide-boost-if-we-add-another-r-process-from-a-higher-$Y_e$-environment-(e.g.,-the-accretion-disk-wind)">&#182;</a></h3>
+<h3 id="We-are-conducting-a-survey-to-find-more-r-II-stars">We are conducting a survey to find more <em>r</em>-II stars<a class="anchor-link" href="#We-are-conducting-a-survey-to-find-more-r-II-stars">&#182;</a></h3><h3 id="During-this-survey,-we-found-the-most-actinide-enhanced-r-II-star-to-date">During this survey, we found <strong>the most actinide-enhanced</strong> <em>r</em>-II star to date<a class="anchor-link" href="#During-this-survey,-we-found-the-most-actinide-enhanced-r-II-star-to-date">&#182;</a></h3><h3 id="Low-$Y_e$,-low-entropy-NSM-conditions-(e.g.,-in-the-tidal-ejecta)-over-produce-the-actinides">Low-$Y_e$, low-entropy NSM conditions (e.g., in the tidal ejecta) <em>over</em>-produce the actinides<a class="anchor-link" href="#Low-$Y_e$,-low-entropy-NSM-conditions-(e.g.,-in-the-tidal-ejecta)-over-produce-the-actinides">&#182;</a></h3><h3 id="NSMs-could-be-a-source-of-the-actinide-boost-if-we-add-another-r-process-from-a-higher-$Y_e$-environment-(e.g.,-the-accretion-disk-wind)">NSMs could be a source of the actinide boost if we add another <em>r</em>-process from a higher-$Y_e$ environment (e.g., the accretion disk wind)<a class="anchor-link" href="#NSMs-could-be-a-source-of-the-actinide-boost-if-we-add-another-r-process-from-a-higher-$Y_e$-environment-(e.g.,-the-accretion-disk-wind)">&#182;</a></h3>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div></section></section>
 </div>
 </div>
