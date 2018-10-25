@@ -11920,37 +11920,6 @@ Now, what is the actinide-boost? It is an r-process-enhanced star that shows an 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Ages-and-cosmochronometry">Ages and cosmochronometry<a class="anchor-link" href="#Ages-and-cosmochronometry">&#182;</a></h1><p><br>232-Th and 238-U are radioactive</p>
-<p>Allows radioactive decay dating</p>
-<p><br>
-$$ t = 46.67~\text{Gyr} \left[\log\epsilon\left(\text{Th/Eu}\right)_0 - \log\epsilon\left(\text{Th/Eu}\right)_{\text{obs}}\right] $$
-<br>$$ t = 14.84~\text{Gyr} \left[\log\epsilon\left(\text{U/Eu}\right)_0 - \log\epsilon\left(\text{U/Eu}\right)_{\text{obs}}\right] $$
-<br>
-$$ t = 21.80~\text{Gyr} \left[\log\epsilon\left(\text{U/Th}\right)_0 - \log\epsilon\left(\text{U/Th}\right)_{\text{obs}}\right] $$</p>
-<aside class="notes">
-Actinides in stars allow some fun and interesting physics. Thorium and Uranium are radioactive on very long timescales--billions of years. So we can apply radioactive decay dating to estimate the age of the r-process material for stars with actinides. The only things we need are the measured abundance ratios of the actinides to some stable r-process element, and the initial amount the star starts with. These production ratios have to be taken from r-process simulations since we don't know what the star was born with. If the production ratios are a good estimate for what the star began with, then all three of these ages should agree. Uranium is difficult to measure in a star, and it's very useful for these equations because it allows the use of these last two checks. With just Thorium, the age calculation relies on only one equation, and there is no way to cross-check that result.
-</aside>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Ages-and-cosmochronometry">Ages and cosmochronometry<a class="anchor-link" href="#Ages-and-cosmochronometry">&#182;</a></h1><p><br><center><img src="./img/thorium_rstars.png" alt="Th" style="width: 90%"></center></p>
-<p>Holmbeck+ (2018)</p>
-<aside class="notes">
-If we apply that first age equations to stars with a particular measured Th to Eu ratio, we get the ages on the right. Hold on, one of these stars is older than the age of the universe, and the actinide-boost stars up here have negative ages; they have yet to be born.
-</aside>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Are-NSMs-the-source-of-the-actinide-boost?">Are NSMs the source of the actinide boost?<a class="anchor-link" href="#Are-NSMs-the-source-of-the-actinide-boost?">&#182;</a></h1><p><br>Do varying levels of neutron richness account for the actinide boost?</p>
 <aside class="notes">
 The previous r-process simulations that predict those negative ages are from neutrino-driven wind and waiting-point calculations. But what if we use production ratios from a neutron star merger r-process simulation? Can NSMs make more actinides? Compared to a traditional CCSN, NSMs are predicted to be more neutron rich, which may encorage more actinide production. Can we turn a knob to change the neutron richness and then get different amounts of Thorium? 
@@ -11994,10 +11963,15 @@ So, starting at the highest Y_e of 0.25, we only make up to the second r-process
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-age-of-actinide-boost-star-J0954+5246">The age of actinide-boost star J0954+5246<a class="anchor-link" href="#The-age-of-actinide-boost-star-J0954+5246">&#182;</a></h1><p><br><center><img src="./img/pr_age_J095442_0350.png" alt="Ye" style="width: 65%"></center></p>
-<p>Holmbeck+ (arXiv:1807.06662)</p>
+<h1 id="Ages-and-cosmochronometry">Ages and cosmochronometry<a class="anchor-link" href="#Ages-and-cosmochronometry">&#182;</a></h1><p><br>232-Th and 238-U are radioactive</p>
+<p>Allows radioactive decay dating</p>
+<p><br>
+$$ t = 46.67~\text{Gyr} \left[\log\epsilon\left(\text{Th/Eu}\right)_0 - \log\epsilon\left(\text{Th/Eu}\right)_{\text{obs}}\right] $$
+<br>$$ t = 14.84~\text{Gyr} \left[\log\epsilon\left(\text{U/Eu}\right)_0 - \log\epsilon\left(\text{U/Eu}\right)_{\text{obs}}\right] $$
+<br>
+$$ t = 21.80~\text{Gyr} \left[\log\epsilon\left(\text{U/Th}\right)_0 - \log\epsilon\left(\text{U/Th}\right)_{\text{obs}}\right] $$</p>
 <aside class="notes">
-If we pick the production ratios at that low Y_e, these are the ages we get for the actinide-boost star. The low literature production ratios from neutrino-driven wind and waiting point calculations predict negative ages, which we saw earlier. But now, our simulations are predicting Thorium that is so high it would take about 50 billion years to decay to what we actually observe. And notice that the three ages don't agree, which indicates that our production ratios are wrong. What went wrong? Maybe the Y_e is too low? [GO BACK 2 SLIDES] We chose a very low Y_e, but there are huge variations of the actinides at higher Y_e. So let's look at these ages across the whole Y_e range.
+Actinides in stars allow some fun and interesting physics. Thorium and Uranium are radioactive on very long timescales--billions of years. So we can apply radioactive decay dating to estimate the age of the r-process material for stars with actinides. The only things we need are the measured abundance ratios of the actinides to some stable r-process element, and the initial amount the star starts with. These production ratios have to be taken from r-process simulations since we don't know what the star was born with. If the production ratios are a good estimate for what the star began with, then all three of these ages should agree. Uranium is difficult to measure in a star, and it's very useful for these equations because it allows the use of these last two checks. With just Thorium, the age calculation relies on only one equation, and there is no way to cross-check that result.
 </aside>
 </div>
 </div>
