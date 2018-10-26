@@ -11869,7 +11869,7 @@ Good evening everyone, and thank you for staying here this late. Today I am exci
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="The-r-process">The <em>r</em>-process<a class="anchor-link" href="#The-r-process">&#182;</a></h1><center><video controls src="./img/korobkinrh_nbs50_frdm2012_new_nseYe1800.mp4"/></center><p>Holmbeck with PRISM (T. Sprouse and M. Mumpower)</p>
-<aside class="notes"> About half the elements heavier than iron in the Solar system were made by the rapid-neutron capture process. The actinides--Thorium and Uranium--can only be made by rapid neutron capture. Slow neutron capture cannot cross this instability gap between Bizmuth and Thorium. [START MOVIE] The system starts with some distribution of seed nuclei, then captures neutrons--in this case, all the way out to the neutron-drip line. Eventually, the neutron flux decreases significantly, and the system beta-decays back to stability. As you can see, material can end up in the heavy region where it may populate Thorium and Uranium.
+<aside class="notes"> So we've heard a lot about the r-process in this session. Just as another reminder, about half the elements heavier than iron in the Solar system were made by the rapid-neutron capture process. The actinides--Thorium and Uranium--can only be made by rapid neutron capture. Slow neutron capture cannot cross this instability gap between Bizmuth and Thorium. [START MOVIE] The system starts with some distribution of seed nuclei, then captures neutrons--in this case, all the way out to the neutron-drip line. Eventually, the neutron flux decreases significantly, and the system beta-decays back to stability. As you can see, material can end up in the heavy region where it may populate Thorium and Uranium.
 </aside>
 </div>
 </div>
@@ -11897,7 +11897,7 @@ Their metal-poor nature and enhanced quality indicates that ...some strong r-pro
 <h1 id="The-actinide-boost">The actinide boost<a class="anchor-link" href="#The-actinide-boost">&#182;</a></h1><p><br><center><img src="./img/J095442_pattern.png" alt="J095442" style="width: 100%"></center></p>
 <p>Holmbeck+ (2018)</p>
 <aside class="notes">
-If you heard Tim Beers's talk this morning, you might have heard about a survey we are conducting to find more r-II stars. During this huge observational effort, we found an actinide boost star. The rest of the r-process pattern looks like every other r-II star, and the actinide abundances are much greater than what's in the Solar System. Many literature studies can reproduce r-II stellar abundance patterns, but fail to account for the actinide boost.
+If you heard Tim Beers's talk this morning, you might have heard about a huge observational effort we are conducting to find more r-II stars. During this survey, we found an actinide boost star. The rest of the r-process pattern looks like every other r-II star, and the actinide abundances are much greater than what's in the Solar System. Many literature studies can reproduce r-II stellar abundance patterns, but fail to account for the actinide boost.
 </aside>
 </div>
 </div>
@@ -11927,7 +11927,7 @@ Does the presence of the actinide boost indicate a separate r-process site? Comp
 <p>$Y_e$ = 0: all neutrons</p>
 <p>$Y_e$ = 1: all protons</p>
 <aside class="notes">
-To investigate this, we use PRISM: an r-process network solver written by Trevor Sprouse and Matt Mumpower. Prism allows for complete flexibility of the nuclear and astrophysical input. Each full r-process calculation takes on the order of minutes, which means we can perform many calculations very quickly.
+To investigate this, we use PRISM: an r-process network solver written by Trevor Sprouse and Matt Mumpower. Prism allows for complete flexibility of the nuclear and astrophysical input.
 For the actinide boost problem, we choose a low-entropy, NSM tidal ejecta trajectory and vary the initial electron fraction. From here on out, I'll be talking about this Y_e, the electron fraction. Y_e essentially measures the fraction of nucleons that are protons. So just remember that a lower Y_e means more neutrons, and a higher Y_e is more protons. We ran 50 separate, full r-process calculations, changing the initial Y_e between 0 and 0.25. We run each of these to 1 Gyr, so every abundance pattern I'll be showing are the final abundances at 1 Gyr.
 </aside>
 </div>
@@ -11958,7 +11958,7 @@ $$ t = 46.67~\text{Gyr} \left[\log\epsilon\left(\text{Th/Eu}\right)_0 - \log\eps
 <br>
 $$ t = 21.80~\text{Gyr} \left[\log\epsilon\left(\text{U/Th}\right)_0 - \log\epsilon\left(\text{U/Th}\right)_{\text{obs}}\right] $$</p>
 <aside class="notes">
-Actinides in stars allow some fun and interesting physics. Thorium and Uranium are radioactive on very long timescales--billions of years. So we can apply radioactive decay dating to estimate the age of the r-process material for stars with actinides. The only things we need are the measured abundance ratios of the actinides to some stable r-process element, and the initial amount the star starts with. These production ratios have to be taken from r-process simulations since we don't know what the star was born with. If the production ratios are a good estimate for what the star began with, then all three of these ages should agree. Uranium is difficult to measure in a star, and it's very useful for these equations because it allows the use of these last two checks. With just Thorium, the age calculation relies on only one equation, and there is no way to cross-check that result.
+Thorium and Uranium are radioactive. Instead of comparing our simulations results directly to observational abundnace patterns, we use radioactive decay dating to estimate the age of the r-process material for stars with actinides. The only things we need are the measured abundance ratios of the actinides to some stable r-process element, and the initial amount the star starts with. These production ratios have to be taken from r-process simulations since we don't know what the star was born with. If the production ratios are a good estimate for what the star began with, then all three of these ages should agree, and our simulation is therefore a good descrption of our star.
 </aside>
 </div>
 </div>
@@ -11972,7 +11972,7 @@ Actinides in stars allow some fun and interesting physics. Thorium and Uranium a
 <p><br><center><img src="./img/Ye_korobkinrh_nbs50_frdm2012_age.png" alt="Ye" style="width: 60%"></center></p>
 <p>Holmbeck+ (arXiv:1807.06662)</p>
 <aside class="notes">
-This plot shows the ages of this star across the whole Y_e range we considered using all three production ratios. We look for consistency between all three ages, which would imply that our production ratios are accurate. This only happens at one point. If the Y_e is lower than about 0.17, then the actinides are always way OVER-produced in these simulations.
+This plot shows those three age equations applied to the actinide boost star across the whole Y_e range we considered. What we look for is consistency between all three ages, which would imply that our r-process simulations accurately describe the star. This only happens at one point. If the Y_e is lower than about 0.17, then the actinides are always way OVER-produced in these simulations.
 </aside>
 </div>
 </div>
@@ -11982,10 +11982,9 @@ This plot shows the ages of this star across the whole Y_e range we considered u
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Actinides-are-currently-not-observed-at-such-high-levels">Actinides are currently not observed at such high levels<a class="anchor-link" href="#Actinides-are-currently-not-observed-at-such-high-levels">&#182;</a></h1><p><br>Need a method to dilute the actinides,<br>
-but keep the lanthanides</p>
+<h1 id="Actinides-are-currently-not-observed-at-such-high-levels">Actinides are currently not observed at such high levels<a class="anchor-link" href="#Actinides-are-currently-not-observed-at-such-high-levels">&#182;</a></h1><p><br>Need a method to dilute the actinides</p>
 <aside class="notes">
-This star is currently the most actinide-enhanced r-II star known. We don't observe the actinides any higher, so we need a way of [NEXT SLIDES] diluting the actinides, but keeping the lanthanides so that the Th to Eu ratio is lower.
+This star is currently the most actinide-enhanced r-II star known. We don't observe the actinides any higher, so we need a way of diluting the actinides, but keeping the lanthanides so that the Th to Eu ratio is lower.
 </aside>
 </div>
 </div>
@@ -12003,8 +12002,9 @@ Tidal ejecta centered at $Y_e=0.16$
 <p>$m_{\rm wind}/m_{\rm dyn}= 3$
 <br>(Rosswog+ 2017; Tanaka+ 2017)</p>
 <aside class="notes">
-We develop actinide dilution method by constructing a range of Y_e.
-So we chose a distribution of Y_e based on what we found in the literature for the tidal and wind ejecta. Since we have all these calculations run at different Y_e's, we used our higher-Y_e results as a stand-in for the wind component. Then we also chose a mass ratio of ejecta type from literature as well. Now we have a distribution of Y_e that characterizes the NSM ejecta, and we apply that distribution to our final abundances using all the Y_e calculations we ran.
+Since nearly every single Y_e value failed to explain the actinide boost star, we instead develop a distribution where we combine all the individual abundance patterns based on a distribution of Y_e.
+We chose a distribution of Y_e based on what we found in the literature for NSM ejecta components. Now we have a distribution of Y_e that characterizes the NSM ejecta, and we apply that distribution to our final abundances using all the Y_e calculations we ran. 
+The pattern looks good, but we don't really know if we've succeeded until we see the ages. The three ages have to agree in order for our simulated abundances to be a possible explanation of actinide boost stars.
 </aside>
 </div>
 </div>
@@ -12017,7 +12017,7 @@ So we chose a distribution of Y_e based on what we found in the literature for t
 <h1 id="Distribution-of-$Y_e$">Distribution of $Y_e$<a class="anchor-link" href="#Distribution-of-$Y_e$">&#182;</a></h1><p><br><center><img src="img/ab_korobkinrh_nbs50_frdm2012_AD_J095442.png" alt="Ye" style="width: 65%"></center></p>
 <p>Holmbeck+ (arXiv:1807.06662)</p>
 <aside class="notes">
-Using a mass distribution motivated by literature, we get this final combined abundance pattern in red. Each of these blue and green lines are the individual patterns from just choosing one Y_e. This method indeed diluted the actinides down to observational levels, but maintained the r-process pattern in the lanthanides.
+Using a mass distribution motivated by literature, we get this final combined abundance pattern in red. Each of these blue and green lines are the individual patterns from just choosing one Y_e. This method indeed diluted the actinides down to observational levels, and maintained the classic r-process signature in the lanthanides.
 </aside>
 </div>
 </div>
@@ -12030,8 +12030,8 @@ Using a mass distribution motivated by literature, we get this final combined ab
 <h1 id="Ages">Ages<a class="anchor-link" href="#Ages">&#182;</a></h1><p><br><center><img src="./img/pr_age_J095442_mix.png" alt="Ye" style="width: 65%"></center></p>
 <p>Holmbeck+ (arXiv:1807.06662)</p>
 <aside class="notes">
-So what does this do for the ages? We went through this whole dilution process in order to make the ages at least be within physical bounds.
-We have applied an actinide diluition method to find an age for this star, the ages we found are much more realistic than the previous result from just one, low-Y_e trajectory. 15 Gyr is much more successful than 50. This is only a first test. The mass distribution we chose was just from literature, so it could be that a different choice of mass distribution or nuclear physics could make these ages agree perfectly. We at least need some type of dilution scenario if we want NSMs to be the source of the actinide boost.
+In blue here are the ages from using just one low Y_e trajectory that overproduced the actinides. You can see that not only are the actinides over produved, but the implied ages are very inconsistent with each other.
+After applying some actinide diluition, the ages we found are much more realistic than the previous result from just one, low-Y_e trajectory. 15 Gyr is much more successful than 50. This is only a first test. The mass distribution we chose was just from literature, so it could be that a different choice of mass distribution or nuclear physics could make these ages agree perfectly. We at least need some type of dilution scenario if we want NSMs to be the source of the actinide boost.
 </aside>
 </div>
 </div>
