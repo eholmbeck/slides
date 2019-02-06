@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="reveal.js/css/reveal.css">
-<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="./reveal.js/css/reveal.css">
+<link rel="stylesheet" href="./reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'reveal.js/css/print/pdf.css';
+        link.href = './reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="reveal.js/lib/js/html5shiv.js"></script>
+<script src="./reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11867,7 +11867,7 @@ Good afternoon, and thank you everyone for being here. Today I'd like to talk to
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Solar-System">Solar System<a class="anchor-link" href="#Solar-System">&#182;</a></h2><p><br></p>
-<center><img src="img/Solar.png" alt="solar" style="width: 80%" align="center"/></center><p><br>Sneden+ (2008)</p>
+<center><img src="./img/Solar.png" alt="solar" style="width: 80%" align="center"/></center><p><br>Sneden+ (2008)</p>
 <aside class="notes">
 Here on Earth, we have the full range of the periodic table. Those elements had to come from somewhere originally. The question is where, and how?
 
@@ -11883,7 +11883,7 @@ That still leaves over 50 elements unaccounted for.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Neutron-Capture">Neutron-Capture<a class="anchor-link" href="#Neutron-Capture">&#182;</a></h2><p><br></p>
-<center><img src="img/Solar_processes.png" alt="processes" style="width: 80%" align="center"/></center><p><br>Sneden+ (2008)</p>
+<center><img src="./img/Solar_processes.png" alt="processes" style="width: 80%" align="center"/></center><p><br>Sneden+ (2008)</p>
 <aside class="notes">
 The rest of the elements were made mostly through two types of neutron capture: slow, where the timescale to capture a neutron is slower than beta decay; and rapid, where neutron capture occurs before beta-decay can take place.
 
@@ -11892,30 +11892,6 @@ The slow neutron-capture process, or s-process, usually happens in asymptotic gi
 On the other hand, the rapid neutron-capture, or r-process, requires a high neutron flux, which cannot be attained during quiescent stellar burning, and rather indicates an explosive environment.
 
 The question is: where and when does the r-process occur in the Universe? One way we can learn about the r-process and its astrophysical site is by looking for signatures that the r-process imprints on the Universe through some rather special stars. 
-</aside>
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="R-II-stars"><em>R</em>-II stars<a class="anchor-link" href="#R-II-stars">&#182;</a></h2><center><img src="./img/sky.png" alt="sky" style="width: 80%" align="center"/></center><aside class="notes">
-First, an r-II star is metal-poor. This is a Solar spectrum inferred from the sky. This image comes straight off the telescope; there is very little processing in this image. Notice all of these vertical black lines. Each of those lines corresponds to an atomic transition of an element in the Sun's photosphere. Obviously, there are a lot of them. The Sun is quite metal-rich, and we can immediately see that in its spectrum.
-</aside>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><center><img src="./img/star.png" alt="star" style="width: 80%" align="center"/></center></p>
-<h3><br>Metal-poor [Fe/H] $\approx -3$</h3>
-<aside class="notes">
-Now compare this to a metal-poor star. This is the same region of the spectrum, but this star has about one one-thousanth of the iron that the Sun has. Those metal absorption features are much less intense.
 </aside>
 </div>
 </div>
@@ -11959,7 +11935,7 @@ One of the major questions is, of course, where in the Universe does the r-proce
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><img src="img/RPA_logo2.png" alt="RPA_logo" style="width: 50%" align="center"/></center><p><br><strong>Phase I:</strong> Identify Bright, Very Metal-Poor Targets</p>
+<center><img src="./img/RPA_logo2.png" alt="RPA_logo" style="width: 50%" align="center"/></center><p><br><strong>Phase I:</strong> Identify Bright, Very Metal-Poor Targets</p>
 <p><strong>Phase II:</strong> Obtain Snapshot High-Res Spectra</p>
 <p><strong>Phase III:</strong> Obtain Portrait High-Res Spectra</p>
 <p><strong>Phase IV:</strong> Galactic Chemical Evolution / Modeling</p>
@@ -12385,8 +12361,8 @@ require(
       waitSeconds: 15
     },
     [
-      "reveal.js/lib/js/head.min.js",
-      "reveal.js/js/reveal.js"
+      "./reveal.js/lib/js/head.min.js",
+      "./reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12402,9 +12378,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "reveal.js/lib/js/classList.js",
+                { src: "./reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "reveal.js/plugin/notes/notes.js",
+                { src: "./reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
