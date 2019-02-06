@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="./reveal.js/css/reveal.css">
-<link rel="stylesheet" href="./reveal.js/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="../slides/reveal.js/css/reveal.css">
+<link rel="stylesheet" href="../slides/reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = './reveal.js/css/print/pdf.css';
+        link.href = '../slides/reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="./reveal.js/lib/js/html5shiv.js"></script>
+<script src="../slides/reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -11855,7 +11855,8 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-Stellar-Actinide-Boost-and-its-Implications-for-the-R-Process">The Stellar Actinide Boost and its Implications for the <em>R</em>-Process<a class="anchor-link" href="#The-Stellar-Actinide-Boost-and-its-Implications-for-the-R-Process">&#182;</a></h1><h2 id="Erika-M.-Holmbeck">Erika M. Holmbeck<a class="anchor-link" href="#Erika-M.-Holmbeck">&#182;</a></h2><h3 id="15-February-2019">15 February 2019<a class="anchor-link" href="#15-February-2019">&#182;</a></h3><aside class="notes">
+<h1>The Stellar Actinide Boost and its<br>Implications for the <em>R</em>-Process</h1>
+<h2 id="Erika-M.-Holmbeck">Erika M. Holmbeck<a class="anchor-link" href="#Erika-M.-Holmbeck">&#182;</a></h2><h3 id="15-February-2019">15 February 2019<a class="anchor-link" href="#15-February-2019">&#182;</a></h3><aside class="notes">
 Good afternoon, and thank you everyone for being here. Today I'd like to talk to you about some of the work I've been doing over the past three or four years.
 </aside>
 </div>
@@ -11866,7 +11867,7 @@ Good afternoon, and thank you everyone for being here. Today I'd like to talk to
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Solar-System">Solar System<a class="anchor-link" href="#Solar-System">&#182;</a></h2><p><br><center><img src="./img/Solar.png" alt="solar" style="width: 80%" align="center"/></center></p>
+<h1 id="Solar-System">Solar System<a class="anchor-link" href="#Solar-System">&#182;</a></h1><p><br><center><img src="./img/Solar.png" alt="solar" style="width: 90%" align="center"/></center></p>
 <p><br>Sneden+ (2008)</p>
 <aside class="notes">
 Here on Earth, we have the full range of the periodic table. Those elements had to come from somewhere originally. The question is where, and how?
@@ -11882,7 +11883,7 @@ That still leaves over 50 elements unaccounted for.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Neutron-Capture">Neutron-Capture<a class="anchor-link" href="#Neutron-Capture">&#182;</a></h2><p><br><center><img src="./img/Solar_processes.png" alt="processes" style="width: 80%" align="center"/></center></p>
+<h2 id="Neutron-Capture">Neutron-Capture<a class="anchor-link" href="#Neutron-Capture">&#182;</a></h2><p><br><center><img src="./img/Solar_processes.png" alt="processes" style="width: 90%" align="center"/></center></p>
 <p><br>Sneden+ (2008)</p>
 <aside class="notes">
 The rest of the elements were made mostly through two types of neutron capture: slow, where the timescale to capture a neutron is slower than beta decay; and rapid, where neutron capture occurs before beta-decay can take place.
@@ -12361,8 +12362,8 @@ require(
       waitSeconds: 15
     },
     [
-      "./reveal.js/lib/js/head.min.js",
-      "./reveal.js/js/reveal.js"
+      "../slides/reveal.js/lib/js/head.min.js",
+      "../slides/reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12378,9 +12379,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "./reveal.js/lib/js/classList.js",
+                { src: "../slides/reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "./reveal.js/plugin/notes/notes.js",
+                { src: "../slides/reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
