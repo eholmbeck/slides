@@ -76,6 +76,8 @@ body {
 
 .reveal .slides {
   text-align: center;
+  /*width: 80%; Changed by E. Holmbeck on 11 Feb 19*/
+  width: 90%;
 }
 
 .reveal .speaker-notes {
