@@ -1666,7 +1666,7 @@ $controlsArrowAngleActive: 36deg;
 	left: 100%;
 	padding: 14px 18px 14px 18px;
 	z-index: 1;
-	font-size: 18px;
+	font-size: 12px;
 	line-height: 1.4;
 	border: 1px solid rgba( 0, 0, 0, 0.05 );
 	color: #222;
@@ -1706,7 +1706,7 @@ $controlsArrowAngleActive: 36deg;
 
 @media screen and (min-width: 1600px) {
 	.reveal .speaker-notes {
-		font-size: 20px;
+		font-size: 14px;
 	}
 }
 
