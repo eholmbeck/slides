@@ -76,8 +76,7 @@ body {
 
 .reveal .slides {
   text-align: center;
-  /*width: 80%; Changed by E. Holmbeck on 11 Feb 19*/
-  height: 100% !important;
+  width: 80%; 
 }
 
 /* added by E. Holmbeck {... */

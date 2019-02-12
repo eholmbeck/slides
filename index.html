@@ -12306,7 +12306,7 @@ Next we can ask if NSMs always produce an actinide-boost? NSMs are currently ver
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Reticulum-II">Reticulum II<a class="anchor-link" href="#Reticulum-II">&#182;</a></h1><p><br><center><img src="./img/ncap_three.png" style="width: 100%"/></center></p>
+<h1 id="Reticulum-II">Reticulum II<a class="anchor-link" href="#Reticulum-II">&#182;</a></h1><p><br><center><img src="./img/retii.png" style="width: 90%"/></center></p>
 <h2><small><br>Ji+ (2016)</small></h2>
 <aside class="notes">
 So let's turn to one the strongest observational suggestions that NSMs gave rise to the r-II stars. Reticulum II is an ultra-faint, dark matter-dominated dwarf galaxy, a satellite of the MW (about 30 kpc away). Alex Ji et al. took high-resolution spectra and measured elemental abundances of nine stars in that galaxy. Seven of them turned out to be r-II stars. Since the galaxy is so small, this entire group of stars was likely polluted by the same r-process event.
@@ -12419,11 +12419,12 @@ require(
 
         // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
-            height: '100%',
-            width: '100%',
+				height: '100%',
+				width: '100%',
             controls: true,
             progress: true,
             history: true,
+				slideNumber: true,
 
             theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
             transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
@@ -12465,6 +12466,11 @@ require(
 <script>
 
 Reveal.initialize({
+	// Adjust height
+	height: '100%',
+	
+	// Adjust width
+	width: '100%',
 
 	// Display presentation control arrows
 	controls: false,
@@ -12484,7 +12490,7 @@ Reveal.initialize({
 	progress: true,
 
 	// Display the page number of the current slide
-	slideNumber: false,
+	slideNumber: true,
 
 	// Push each slide change to the browser history
 	history: false,
