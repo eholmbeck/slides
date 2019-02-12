@@ -77,12 +77,13 @@ body {
 .reveal .slides {
   text-align: center;
   /*width: 80%; Changed by E. Holmbeck on 11 Feb 19*/
-  height: 100%;
+  height: 100% !important;
 }
 
 /* added by E. Holmbeck {... */
 .reveal .slides>section {
   min-height: 90%;
+  top: auto;
 }
 
 .reveal .slides>section>section {
