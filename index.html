@@ -11949,10 +11949,10 @@ It is unknown what, astrophysically, produced the material in these stars. Histo
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Metallicity">Metallicity<a class="anchor-link" href="#Metallicity">&#182;</a></h1><p><br> Sun: [Fe/H]=0</p>
-<center><img src="./img/sky.png" alt="sky" style="width: 60%" align="center"/></center>
+<h2 id="Metallicity">Metallicity<a class="anchor-link" href="#Metallicity">&#182;</a></h2><p>Sun: [Fe/H]=0</p>
+<center><img src="./img/sky.png" alt="sky" style="width: 55%" align="center"/></center>
 <br> EMP: [Fe/H]=-3
-<center><img src="./img/star.png" alt="star" style="width: 60%" align="center"/></center>
+<center><img src="./img/star.png" alt="star" style="width: 55%" align="center"/></center>
 </div>
 </div>
 </div></section><section>
@@ -11961,7 +11961,7 @@ It is unknown what, astrophysically, produced the material in these stars. Histo
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Enrichment">Enrichment<a class="anchor-link" href="#Enrichment">&#182;</a></h1><p><br></p>
+<h2 id="Enrichment">Enrichment<a class="anchor-link" href="#Enrichment">&#182;</a></h2><p><br></p>
 <center><img src="./img/J095442_spec.png" alt="j095442" style="width: 80%" align="center"/></center>
 </div>
 </div>
@@ -12166,6 +12166,16 @@ This is a movie of a r-process nucleosynthesis in NSM tidal ejecta. The actinide
 </aside>
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Fission">Fission<a class="anchor-link" href="#Fission">&#182;</a></h2><center><img src="./img/fission.png" alt="Ye" style="width: 60%"></center><p>Nuclear Forensic Analysis, Moody, Grant &amp; Hutcheon</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12196,6 +12206,48 @@ For the actinide boost study, we choose a low-entropy, NSM tidal ejecta trajecto
 </aside>
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="PRISM">PRISM<a class="anchor-link" href="#PRISM">&#182;</a></h2><p>$ \dot Y = f(Y) $</p>
+<p>$\dot Y(Z,A) = Y(Z, A-1)\lambda_n^{Z,A-1} + Y(Z,A+1)\lambda_\gamma^{Z, A+1} \\
+\qquad\qquad - Y(Z,A)\left(\lambda_n^{Z,A} + \lambda_\gamma^{Z,A} + \lambda_\beta^{Z,A} + \lambda_{\beta n}^{Z,A} + \lambda_{\beta 2n}^{Z,A} + \lambda_{\beta 3n}^{Z,A}\right) \\
+\qquad\qquad + Y(Z-1, A)\lambda_\beta^{Z-1,A} + Y(Z-1, A+1)\lambda_{\beta n}^{Z-1,A+1} + ...$</p>
+<p>Solve using Implicit Euler method</p>
+<p>$ Y(t, dt) = Y(t) + dt\left[ \dot Y(t+dt)\right] $</p>
+<p>$ \frac{Y(t+dt) - Y(t)}{dt} - \dot Y = 0 $</p>
+<p>Find zeros</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Theoretical-$\beta$-decay-rates">Theoretical $\beta$-decay rates<a class="anchor-link" href="#Theoretical-$\beta$-decay-rates">&#182;</a></h2><p>Fermi's Golden rule</p>
+<p>$ \mathcal{W} = \frac{2\pi}{\hbar} \left|\langle{\phi_k(\vec r)}| H |{\phi_0(\vec r)}\rangle \right|^2 \rho(E_F)$</p>
+<p>Find density of states</p>
+<p>$ \lambda \propto \int_0^{E_0} E_e \left(E_0-E_e\right)^2 \left(E_e^2-m_e^2c^4\right)^{1/2}F(Z,E_e) dE_e $</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Theoretical-neutron-capture-rates">Theoretical neutron capture rates<a class="anchor-link" href="#Theoretical-neutron-capture-rates">&#182;</a></h2><p>$ \sigma_{ab} \propto \frac{T_a T_b}{\sum_c T_c} $</p>
+<aside class="notes">
+The Hauser-Feshbach model assumes the formation of the compound nucleus in thermodynamic equilibrium. The energy of the incident particle is shared equally among all nucleons before being released by particle of γ emission. The rate is related to the neutron and γ transmission coefficients, which depend on the excitation energy of the nucleus, the separation energy of the neutron, the γ-ray strength function, and the energy density of states.
+</aside>
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -12214,7 +12266,7 @@ These are the finaly abundance patterns when we start with different values of Y
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Actinide-and-lanthanide-production">Actinide and lanthanide production<a class="anchor-link" href="#Actinide-and-lanthanide-production">&#182;</a></h1><center><img src="./img/Ye_korobkinrh_nbs50_frdm2012.png" alt="Ye" style="width: 60%"></center><h2 id="Holmbeck+-(2019)"><small>Holmbeck+ (2019)</small><a class="anchor-link" href="#Holmbeck+-(2019)">&#182;</a></h2><aside class="notes">
+<h1 id="Actinide-and-lanthanide-production">Actinide and lanthanide production<a class="anchor-link" href="#Actinide-and-lanthanide-production">&#182;</a></h1><center><img src="./img/Ye_korobkinrh_nbs50_frdm2012_age.png" alt="Ye" style="width: 60%"></center><h2 id="Holmbeck+-(2019)"><small>Holmbeck+ (2019)</small><a class="anchor-link" href="#Holmbeck+-(2019)">&#182;</a></h2><aside class="notes">
 This plot is just a summary of how the final Europium, Thorium, and Uranium abundances vary as a function of Y_e, and here we can start to see how material moves through the network as neutron richness is increased. Again, from the higher Y_e end, the lanthanides are just starting to be produced, then decreasing Y_e further, the actinides start growing in. But then, further increasing neutron richness, the actinides start going down. What's happening is that the bulk material is moving up from the actinides and fissions through neutron-induced fission. And correspondingly, we see Europium increase since the fission products deposit near Europium. Then as we keep increasing the neutron richness, those fission fragments are allowed to capture back up to the actinides, then fission again. And this can repeat several times in very neutron-rich environments.
 </aside>
 </div>
@@ -12225,7 +12277,7 @@ This plot is just a summary of how the final Europium, Thorium, and Uranium abun
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Duflo-Zuker">Duflo-Zuker<a class="anchor-link" href="#Duflo-Zuker">&#182;</a></h1><center><img src="./img/Ye_reheating_dz33_nb50_nse_loge.png" alt="Ye" style="width: 60%"></center>
+<h2 id="Duflo-Zuker">Duflo-Zuker<a class="anchor-link" href="#Duflo-Zuker">&#182;</a></h2><center><img src="./img/Ye_reheating_dz33_nb50_nse_loge.png" alt="Ye" style="width: 60%"></center>
 </div>
 </div>
 </div></section><section>
@@ -12234,7 +12286,7 @@ This plot is just a summary of how the final Europium, Thorium, and Uranium abun
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Marketin+-(2014)">Marketin+ (2014)<a class="anchor-link" href="#Marketin+-(2014)">&#182;</a></h1><center><img src="./img/Ye_reheating_frdm2012_nb50_marketin_loge.png" alt="Ye" style="width: 60%"></center>
+<h2 id="Marketin+-(2014)">Marketin+ (2014)<a class="anchor-link" href="#Marketin+-(2014)">&#182;</a></h2><center><img src="./img/Ye_reheating_frdm2012_nb50_marketin_loge.png" alt="Ye" style="width: 60%"></center>
 </div>
 </div>
 </div></section><section>
@@ -12243,7 +12295,7 @@ This plot is just a summary of how the final Europium, Thorium, and Uranium abun
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Kodama-&amp;-Takahashi-(1975)">Kodama &amp; Takahashi (1975)<a class="anchor-link" href="#Kodama-&amp;-Takahashi-(1975)">&#182;</a></h1><center><img src="./img/Ye_reheating_frdm2012_nbkodama_nse_loge.png" alt="Ye" style="width: 60%"></center>
+<h2 id="Kodama-&amp;-Takahashi-(1975)">Kodama &amp; Takahashi (1975)<a class="anchor-link" href="#Kodama-&amp;-Takahashi-(1975)">&#182;</a></h2><center><img src="./img/Ye_reheating_frdm2012_nbkodama_nse_loge.png" alt="Ye" style="width: 60%"></center>
 </div>
 </div>
 </div></section></section><section><section>
@@ -12259,7 +12311,76 @@ $$ t = 46.67~\text{Gyr} \left[\log\epsilon\left(\text{Th/Eu}\right)_0 - \log\eps
 $$ t = 21.80~\text{Gyr} \left[\log\epsilon\left(\text{U/Th}\right)_0 - \log\epsilon\left(\text{U/Th}\right)_{\text{obs}}\right] $$</p>
 <aside class="notes">
 Now, let's apply these final abundances to our ages. And we're going to use these equations to calculate an age for that extremely actinide-enhanced star I mentioned a few slides ago, J0954+5246. First, let's pick a single, very low Y_e.
+
+[[ Remember that t_half = tau*ln(2) ]]
+[[ The half-life of 238-U is about 4.5 Gyr, and 232-Th is 14.0 Gyr ]]
 </aside>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay">$\alpha$-decay<a class="anchor-link" href="#$\alpha$-decay">&#182;</a></h2><p>The $\alpha$-decay rate is a function of the probability of forming an $\alpha$ particle in the nucleus ($p_\alpha$), the transmission probability ($\mathcal T$), and the frequency of attempts $\nu$.
+    \begin{align<em>}
+    \lambda &amp;= p_\alpha \nu \mathcal T
+    \end{align</em>}
+The radius of the Coulomb barrier $r_c$ is where $V_c=E_\alpha$. The radius of the well, $r_s$ is approximately equal to the radius of the nucleus plus the radius of the $\alpha$ particle. Assuming a spherical well, with $l=0$,
+    \begin{align<em>}
+    r_s &amp;= 1.2 \left[A^{1/3} + 4^{1/3}\right]
+    \end{align</em>}
+Outside the well, the barrier is purely Coulombic.
+    \begin{align<em>}
+    V_c(r&gt;r_c) &amp;= \frac{Z_1 Z_2 e^2}{4\pi\epsilon_0 r} = \frac{2.88 Z_2}{r} \textrm{MeV}
+    \end{align</em>}
+The radial Schroedinger Equation is
+    \begin{align<em>}
+    \frac{d^2u(r)}{dr^2} + \frac{2\mu}{\hbar^2}\left(E_\alpha - V_c(r)\right) u_r = 0
+    \end{align</em>}
+This has the general solution
+    \begin{align<em>}
+    u_0(r) &amp;\approx e^{\phi(r)} \
+    \frac{du_0(r)}{dr} &amp;= \frac{d\phi(r)}{dr} u_0(r) \
+    \frac{d^2 u_0(r)}{dr^2} &amp;= \left(\frac{d\phi(r)}{dr}\right)^2 u_0(r) + \frac{d^2\phi(r)}{dr^2} u_0(r)
+    \end{align</em>}
+Assuming a smoothly-varying Coulomb potential, we can ignore the second term. The Schroedinger Equation becomes
+    \begin{gather<em>}
+    \left(\frac{d\phi(r)}{dr}\right)^2 u<em>0(r) + \frac{2\mu}{\hbar^2}\left(E</em>\alpha - V_c(r)\right) u<em>r = 0\
+    \left(\frac{d\phi(r)}{dr}\right)^2 + \frac{2\mu}{\hbar^2}\left(E</em>\alpha - V_c(r)\right) = 0 \
+    \left(\frac{d\phi(r)}{dr}\right)^2 = \pm \sqrt{\frac{2\mu}{\hbar^2}\left( V<em>c(r) - E</em>\alpha\right)}
+    \end{gather</em>}
+There are three regions
+    \begin{align<em>}
+    V(r)-E<em>\alpha &amp;\rightarrow \left{\begin{matrix} E</em>\alpha &amp; 0\leq r &lt; r<em>s \ V(r)-E</em>\alpha &amp; r_s \leq r \leq r<em>c \ -|V(r)-E</em>\alpha| &amp; r_c\leq r \end{matrix}\right.
+    \end{align</em>}
+Which correspond to:
+    \begin{align<em>}
+    \frac{d \phi(r)}{dr} &amp;= \pm \left{\begin{matrix} ik_0 &amp; 0\leq r &lt; r_s \ \kappa(r) &amp; r_s \leq r \leq r_c \ i\kappa(r) &amp; r_c\leq r \end{matrix}\right.
+    \end{align</em>}
+So wavefunction in the region $r_s<r<r_c$ is
+    \begin{align<em>}
+    u<em>0 &amp;= A\exp\left[\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]+B\exp\left[-\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
+    \end{align</em>}
+We will ignore the contribution from the second term since it represents the wave reflected within the Coulomb barrier, $B=0$.
+    \begin{align<em>}
+    u<em>0 &amp;= A\exp\left[\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]\
+    |u_0(r_s&lt;r&lt;r<em>c)|^2 &amp;= |A\exp\left[\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]|^2\
+    |u_0(r_s&lt;r&lt;r<em>c)|^2 &amp;= |A|^2\exp\left[2\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
+    \end{align</em>}
+Next is the wavefunction outside of the barrier, $r_c<r$.
+    \begin{align<em>}
+    u<em>0 &amp;= C\exp\left[i\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]+D\exp\left[-i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
+    \end{align</em>}
+The second term is an incoming wave (not outgoing from the nucleus), so we will ignore that component, $D=0$.
+    \begin{align<em>}
+    u<em>0 &amp;= C\exp\left[i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]\
+    |u_0(r<em>c&lt;r)|^2 &amp;= |C\exp\left[i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]|^2\
+    |u_0(r_c&lt;r)|^2 &amp;= |C|^2
+    \end{align</em>}
+Now we match boundary conditions by requiring that the wavefunctions in the two regions are equal at the boundary. This will require that $C=A$.</p>
+
 </div>
 </div>
 </div></section></section><section><section>
@@ -12280,7 +12401,7 @@ If we pick the production ratios at that low Y_e, these are the ages we get for 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="The-age-of-J0954+5246">The age of J0954+5246<a class="anchor-link" href="#The-age-of-J0954+5246">&#182;</a></h1><center><img src="./img/Ye_korobkinrh_nbs50_frdm2012_age.png" alt="Ye" style="width: 55%"></center><h2 id="Holmbeck+-(2019)"><small>Holmbeck+ (2019)</small><a class="anchor-link" href="#Holmbeck+-(2019)">&#182;</a></h2><aside class="notes">
+<h2 id="The-age-of-J0954+5246">The age of J0954+5246<a class="anchor-link" href="#The-age-of-J0954+5246">&#182;</a></h2><center><img src="./img/Ye_korobkinrh_nbs50_frdm2012_age.png" alt="Ye" style="width: 55%"></center><h2 id="Holmbeck+-(2019)"><small>Holmbeck+ (2019)</small><a class="anchor-link" href="#Holmbeck+-(2019)">&#182;</a></h2><aside class="notes">
 These are the same ages for the actinide-boost star, just shown for all the Y_e values we tested. There is only one point where all the ages agree. Any more neutron rich, and the actinides are always overproduced in this trajectory.
 </aside>
 </div>
@@ -12303,7 +12424,7 @@ With PRISM, we can switch out the nuclear input to update all our lifetimes and 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Marketin+-(2014)">Marketin+ (2014)<a class="anchor-link" href="#Marketin+-(2014)">&#182;</a></h1><center><img src="./img/betarates_frdm2012_marketin.png" alt="beta rates" style="width: 80%"></center>
+<h2 id="Marketin+-(2014)">Marketin+ (2014)<a class="anchor-link" href="#Marketin+-(2014)">&#182;</a></h2><center><img src="./img/betarates_frdm2012_marketin.png" alt="beta rates" style="width: 80%"></center>
 </div>
 </div>
 </div></section><section>
@@ -12312,7 +12433,7 @@ With PRISM, we can switch out the nuclear input to update all our lifetimes and 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Marketin+-(2014)">Marketin+ (2014)<a class="anchor-link" href="#Marketin+-(2014)">&#182;</a></h1><center><img src="./img/flowcompare_frdm2012_Ye0.0350_mkt_new.png" alt="beta rates" style="width: 80%"></center>
+<h2 id="Marketin+-(2014)">Marketin+ (2014)<a class="anchor-link" href="#Marketin+-(2014)">&#182;</a></h2><center><img src="./img/flowcompare_frdm2012_Ye0.0350_mkt_new.png" alt="beta rates" style="width: 80%"></center>
 </div>
 </div>
 </div></section><section>
@@ -12321,7 +12442,7 @@ With PRISM, we can switch out the nuclear input to update all our lifetimes and 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Duflo-Zuker-separation-energies">Duflo-Zuker separation energies<a class="anchor-link" href="#Duflo-Zuker-separation-energies">&#182;</a></h1><center><img src="./img/sepn_dz33_map.png" alt="beta rates" style="width: 80%"></center>
+<h2 id="Duflo-Zuker-separation-energies">Duflo-Zuker separation energies<a class="anchor-link" href="#Duflo-Zuker-separation-energies">&#182;</a></h2><center><img src="./img/sepn_dz33_map.png" alt="beta rates" style="width: 80%"></center>
 </div>
 </div>
 </div></section></section><section><section>
@@ -12388,7 +12509,7 @@ The pattern looks good, but we don't really know if we've succeeded until we see
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Duflo-Zuker">Duflo-Zuker<a class="anchor-link" href="#Duflo-Zuker">&#182;</a></h1><p><br><center><img src="img/ab_dz33_AD.png" alt="Ye" style="width: 60%"></center></p>
+<h2 id="Duflo-Zuker">Duflo-Zuker<a class="anchor-link" href="#Duflo-Zuker">&#182;</a></h2><p><br><center><img src="img/ab_dz33_AD.png" alt="Ye" style="width: 60%"></center></p>
 
 </div>
 </div>
