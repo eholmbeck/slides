@@ -12212,15 +12212,18 @@ For the actinide boost study, we choose a low-entropy, NSM tidal ejecta trajecto
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="PRISM">PRISM<a class="anchor-link" href="#PRISM">&#182;</a></h2><p>$ \dot Y = f(Y) $</p>
-<p>$\dot Y(Z,A) = Y(Z, A-1)\lambda_n^{Z,A-1} + Y(Z,A+1)\lambda_\gamma^{Z, A+1} \\
+<h2 id="PRISM">PRISM<a class="anchor-link" href="#PRISM">&#182;</a></h2>\begin{equation*}
+\dot Y = f(Y) \\
+\dot Y(Z,A) = Y(Z, A-1)\lambda_n^{Z,A-1} + Y(Z,A+1)\lambda_\gamma^{Z, A+1} \\
 \qquad\qquad - Y(Z,A)\left(\lambda_n^{Z,A} + \lambda_\gamma^{Z,A} + \lambda_\beta^{Z,A} + \lambda_{\beta n}^{Z,A} + \lambda_{\beta 2n}^{Z,A} + \lambda_{\beta 3n}^{Z,A}\right) \\
-\qquad\qquad + Y(Z-1, A)\lambda_\beta^{Z-1,A} + Y(Z-1, A+1)\lambda_{\beta n}^{Z-1,A+1} + ...$</p>
-<p>Solve using Implicit Euler method</p>
-<p>$ Y(t, dt) = Y(t) + dt\left[ \dot Y(t+dt)\right] $</p>
-<p>$ \frac{Y(t+dt) - Y(t)}{dt} - \dot Y = 0 $</p>
-<p>Find zeros</p>
-
+\qquad\qquad + Y(Z-1, A)\lambda_\beta^{Z-1,A} + Y(Z-1, A+1)\lambda_{\beta n}^{Z-1,A+1} + ...
+\end{equation*}<p>Solve using Implicit Euler method</p>
+\begin{equation*}
+ Y(t, dt) = Y(t) + dt\left[ \dot Y(t+dt)\right]\\
+ \frac{Y(t+dt) - Y(t)}{dt} - \dot Y = 0
+\end{equation*}<aside class="notes">
+Find zeros
+</aside>
 </div>
 </div>
 </div></section><section>
@@ -12230,10 +12233,12 @@ For the actinide boost study, we choose a low-entropy, NSM tidal ejecta trajecto
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Theoretical-$\beta$-decay-rates">Theoretical $\beta$-decay rates<a class="anchor-link" href="#Theoretical-$\beta$-decay-rates">&#182;</a></h2><p>Fermi's Golden rule</p>
-<p>$ \mathcal{W} = \frac{2\pi}{\hbar} \left|\langle{\phi_k(\vec r)}| H |{\phi_0(\vec r)}\rangle \right|^2 \rho(E_F)$</p>
-<p>Find density of states</p>
-<p>$ \lambda \propto \int_0^{E_0} E_e \left(E_0-E_e\right)^2 \left(E_e^2-m_e^2c^4\right)^{1/2}F(Z,E_e) dE_e $</p>
-
+\begin{equation*}
+\lambda \propto \left|\langle{\phi_k(\vec r)}| H |{\phi_0(\vec r)}\rangle \right|^2 \rho(E_F)
+\end{equation*}<p>Find density of states</p>
+\begin{equation*}
+\lambda \propto \int_0^{E_0} E_e \left(E_0-E_e\right)^2 \left(E_e^2-m_e^2c^4\right)^{1/2}F(Z,E_e) dE_e
+\end{equation*}
 </div>
 </div>
 </div></section><section>
@@ -12242,8 +12247,20 @@ For the actinide boost study, we choose a low-entropy, NSM tidal ejecta trajecto
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Theoretical-neutron-capture-rates">Theoretical neutron capture rates<a class="anchor-link" href="#Theoretical-neutron-capture-rates">&#182;</a></h2><p>$ \sigma_{ab} \propto \frac{T_a T_b}{\sum_c T_c} $</p>
+<h2 id="Theoretical-neutron-capture-rates">Theoretical neutron capture rates<a class="anchor-link" href="#Theoretical-neutron-capture-rates">&#182;</a></h2><p>Reaction: $ A + \alpha \rightarrow C \rightarrow B + \beta $
+\begin{equation<em>}
+\langle \sigma<em>{\alpha\beta}\rangle \propto \sum</em>{J^\pi} \left(2 J +1\right) \frac{T<em>\alpha(J^\pi) T</em>\beta(J^\pi)}{\sum_C T_C(J_C^\pi)}
+\end{equation</em>}
+Many open channels:
+\begin{align<em>}
+\sum_\beta T<em>C &amp;= \sum</em>{j_\beta} \int_0^{E_0^</em>} \rho<em>\beta(E</em>\beta^<em>) T_C(J<em>C^\pi) dE</em>\beta^</em> \
+T_C(J<em>C^\pi) &amp;\propto \left[\frac{2 J+1}{(2j</em>\alpha + 1)(2 j_\beta +1)}\right]^{-1}
+\end{align*}</p>
 <aside class="notes">
+Statistically averaged cross section, with particle "a" coming in, and particle "b" coming out. It depends on the allowed spin and parities, and the transmission coefficients of the incoming particle, the outgoing particle, and the compound nucleus.
+
+The transmission coefficient of the compound nucleus depends on the outgoing particle and the allowed density of states and the excitation energy (E*). It can only go up to a maximum excitation energy (E0), where E0 = E - Ea - Eb0, where Ea is the energy of the incoming particle, and Eb0 is the ground state energy of the nucleus Eb.
+
 The Hauser-Feshbach model assumes the formation of the compound nucleus in thermodynamic equilibrium. The energy of the incident particle is shared equally among all nucleons before being released by particle of γ emission. The rate is related to the neutron and γ transmission coefficients, which depend on the excitation energy of the nucleus, the separation energy of the neutron, the γ-ray strength function, and the energy density of states.
 </aside>
 </div>
@@ -12334,8 +12351,17 @@ The radius of the Coulomb barrier $r_c$ is where $V_c=E_\alpha$. The radius of t
 Outside the well, the barrier is purely Coulombic.
     \begin{align<em>}
     V_c(r&gt;r_c) &amp;= \frac{Z_1 Z_2 e^2}{4\pi\epsilon_0 r} = \frac{2.88 Z_2}{r} \textrm{MeV}
-    \end{align</em>}
-The radial Schroedinger Equation is
+    \end{align</em>}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>The radial Schroedinger Equation is
     \begin{align<em>}
     \frac{d^2u(r)}{dr^2} + \frac{2\mu}{\hbar^2}\left(E_\alpha - V_c(r)\right) u_r = 0
     \end{align</em>}
@@ -12350,16 +12376,34 @@ Assuming a smoothly-varying Coulomb potential, we can ignore the second term. Th
     \left(\frac{d\phi(r)}{dr}\right)^2 u<em>0(r) + \frac{2\mu}{\hbar^2}\left(E</em>\alpha - V_c(r)\right) u<em>r = 0\
     \left(\frac{d\phi(r)}{dr}\right)^2 + \frac{2\mu}{\hbar^2}\left(E</em>\alpha - V_c(r)\right) = 0 \
     \left(\frac{d\phi(r)}{dr}\right)^2 = \pm \sqrt{\frac{2\mu}{\hbar^2}\left( V<em>c(r) - E</em>\alpha\right)}
-    \end{gather</em>}
-There are three regions
+    \end{gather</em>}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>There are three regions
     \begin{align<em>}
     V(r)-E<em>\alpha &amp;\rightarrow \left{\begin{matrix} E</em>\alpha &amp; 0\leq r &lt; r<em>s \ V(r)-E</em>\alpha &amp; r_s \leq r \leq r<em>c \ -|V(r)-E</em>\alpha| &amp; r_c\leq r \end{matrix}\right.
     \end{align</em>}
 Which correspond to:
     \begin{align<em>}
     \frac{d \phi(r)}{dr} &amp;= \pm \left{\begin{matrix} ik_0 &amp; 0\leq r &lt; r_s \ \kappa(r) &amp; r_s \leq r \leq r_c \ i\kappa(r) &amp; r_c\leq r \end{matrix}\right.
-    \end{align</em>}
-So wavefunction in the region $r_s<r<r_c$ is
+    \end{align</em>}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>So wavefunction in the region $r_s<r<r_c$ is
     \begin{align<em>}
     u<em>0 &amp;= A\exp\left[\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]+B\exp\left[-\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
     \end{align</em>}
@@ -12368,8 +12412,17 @@ We will ignore the contribution from the second term since it represents the wav
     u<em>0 &amp;= A\exp\left[\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]\
     |u_0(r_s&lt;r&lt;r<em>c)|^2 &amp;= |A\exp\left[\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]|^2\
     |u_0(r_s&lt;r&lt;r<em>c)|^2 &amp;= |A|^2\exp\left[2\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
-    \end{align</em>}
-Next is the wavefunction outside of the barrier, $r_c<r$.
+    \end{align</em>}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Next is the wavefunction outside of the barrier, $r_c<r$.
     \begin{align<em>}
     u<em>0 &amp;= C\exp\left[i\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]+D\exp\left[-i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
     \end{align</em>}
@@ -12379,7 +12432,71 @@ The second term is an incoming wave (not outgoing from the nucleus), so we will 
     |u_0(r<em>c&lt;r)|^2 &amp;= |C\exp\left[i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]|^2\
     |u_0(r_c&lt;r)|^2 &amp;= |C|^2
     \end{align</em>}
-Now we match boundary conditions by requiring that the wavefunctions in the two regions are equal at the boundary. This will require that $C=A$.</p>
+Boundary conditions require that the wavefunctions in the two regions are equal at the boundary: $C=A$.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Transmission coefficient, $\mathcal T$. Within the barrier, approximate $r_s \ll r_c$, therefore we can ignore the region of $r<r_s$.
+    \begin{align<em>}
+    \mathcal T &amp;= \frac{|u_0(r_c\leq r)|^2}{|u_0(r_s\leq r &lt; r<em>c)|^2}\
+    \mathcal T &amp;= \frac{|A|^2}{|A|^2\exp\left[2\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]}\
+    \mathcal T &amp;= \exp\left[-2\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
+    \end{align</em>}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Now what's left is to solve this integral. Within the Coulomb barrier,
+    \begin{align<em>}
+    \phi<em>+(r) &amp;= \int</em>{r_s}^{r<em>c}\sqrt{\frac{2\mu}{\hbar^2}\left[V(r)-E</em>\alpha\right]} dr
+    \end{align</em>}
+The upper limit of the integral is where $V(r_c)=E_\alpha$. By this condition, the value of the integral is
+    \begin{align<em>}
+    \phi<em>+(r) &amp;=\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\cos^{-1}\sqrt{\frac{r_s}{r_c}} - \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r_c}\right)}\right]
+    \end{align</em>}
+So the transmission coefficient is
+    \begin{align<em>}
+    \mathcal T &amp;= \exp\left[-2\sqrt{\frac{2\mu E_\alpha}{\hbar^2}}r_c\left[\cos^{-1}\sqrt{\frac{r_s}{r_c}} - \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r<em>c}\right)}\right] \right]\
+    \ln \mathcal T &amp;= -2\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\cos^{-1}\sqrt{\frac{r_s}{r_c}} - \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r_c}\right)}\right]
+    \end{align</em>}</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Next we can apply again the approximation that $r_s\ll r_c$.
+    \begin{align<em>}
+    \cos^{-1}\sqrt{\frac{r_s}{r_c}} &amp;\approx \frac{\pi}{2}-\sqrt{\frac{r_s}{r_c}}\
+     \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r_c}\right)} &amp;\approx \sqrt{\frac{r_s}{r<em>c}}\
+    \ln \mathcal T &amp;\approx -2\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\frac{\pi}{2}-\sqrt{\frac{r_s}{r_c}}-\sqrt{\frac{r_s}{r<em>c}}\right]\
+    \ln \mathcal T &amp;\approx -\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\pi-4\sqrt{\frac{r_s}{r_c}}\right]
+    \end{align</em>}
+Use the $Q$-value from the reaction to get $E_\alpha$, and solve for $r_s$ and $r_c$ with
+    \begin{align<em>}
+    r_s &amp;= 1.2\text{ fm}\left(A^{1/3}+4^{1/3}\right) = 8.97\text{ fm}\
+    r_c &amp;= \frac{2 Z \alpha\hbar c}{Q} = 446.415\text{ fm}
+    \end{align</em>}
+Giving a value of $\ln\mathcal T=-357.8$. Then use 
+    \begin{align<em>}
+    p<em>\alpha &amp;= 0.1\
+    \nu &amp;= \frac{\sqrt{E</em>\alpha}}{A^{1/3}} \times 2.9\times 10^{21} \text{ s}^{-1}\
+    \mathcal W &amp;=p_\alpha \nu \mathcal T
+    \end{align</em>}</p>
 
 </div>
 </div>
@@ -12509,6 +12626,16 @@ The pattern looks good, but we don't really know if we've succeeded until we see
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Kodama-&amp;-Takahashi-(1975)">Kodama &amp; Takahashi (1975)<a class="anchor-link" href="#Kodama-&amp;-Takahashi-(1975)">&#182;</a></h2><p><br><center><img src="img/ab_kodama_AD.png" alt="Ye" style="width: 60%"></center></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Duflo-Zuker">Duflo-Zuker<a class="anchor-link" href="#Duflo-Zuker">&#182;</a></h2><p><br><center><img src="img/ab_dz33_AD.png" alt="Ye" style="width: 60%"></center></p>
 
 </div>
@@ -12524,6 +12651,15 @@ The pattern looks good, but we don't really know if we've succeeded until we see
 In blue here are the ages from using just one low Y_e trajectory that overproduced the actinides. You can see that not only are the actinides over produved, but the implied ages are very inconsistent with each other.
 After applying some actinide diluition, the ages we found are much more realistic than the previous result from just one, low-Y_e trajectory. 15 Gyr is much more successful than 50. This is only a first test. The mass distribution we chose was just from literature, so it could be that a different choice of mass distribution or nuclear physics could make these ages agree perfectly. We at least need some type of dilution scenario if we want NSMs to be the source of the actinide boost.
 </aside>
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Ages-with-Dy">Ages with Dy<a class="anchor-link" href="#Ages-with-Dy">&#182;</a></h2><center><img src="./img/pr_age_all_AD_Dy.png" alt="Ye" style="width: 80%"></center>
 </div>
 </div>
 </div></section></section><section><section>
@@ -12543,9 +12679,8 @@ Next we can ask if NSMs always produce an actinide-boost? NSMs are currently ver
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Reticulum-II">Reticulum II<a class="anchor-link" href="#Reticulum-II">&#182;</a></h1><p><br><center><img src="./img/retii.png" style="width: 90%"/></center></p>
-<h2><small><br>Ji+ (2016)</small></h2>
-<aside class="notes">
+<h1 id="Reticulum-II">Reticulum II<a class="anchor-link" href="#Reticulum-II">&#182;</a></h1><p><br><center><img src="./img/retii.png" style="width: 95%"/></center></p>
+<h2 id="Ji+-(2016)"><small>Ji+ (2016)</small><a class="anchor-link" href="#Ji+-(2016)">&#182;</a></h2><aside class="notes">
 So let's turn to one the strongest observational suggestions that NSMs gave rise to the r-II stars. Reticulum II is an ultra-faint, dark matter-dominated dwarf galaxy, a satellite of the MW (about 30 kpc away). Alex Ji et al. took high-resolution spectra and measured elemental abundances of nine stars in that galaxy. Seven of them turned out to be r-II stars. Since the galaxy is so small, this entire group of stars was likely polluted by the same r-process event.
 
 These authors argue that such high levels of r-process enrichment and low metallicity could not come from supernovae and argue that the galaxy was most likely enriched by a NSM event.
@@ -12573,7 +12708,7 @@ Just for comparison, as a middle ground between the two actinide extremes is ano
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Zr,-Dy,-Th-production">Zr, Dy, Th production<a class="anchor-link" href="#Zr,-Dy,-Th-production">&#182;</a></h1><p><br><center><img src="./img/Ye_s040t020y200_nbs50_frdm2012.png" style="width: 70%"/></center></p>
+<h1 id="Zr,-Dy,-Th-production">Zr, Dy, Th production<a class="anchor-link" href="#Zr,-Dy,-Th-production">&#182;</a></h1><p><br><center><img src="./img/Ye_s040t020y200_nbs50_frdm2012.png" style="width: 50%"/></center></p>
 
 </div>
 </div>
@@ -12583,7 +12718,7 @@ Just for comparison, as a middle ground between the two actinide extremes is ano
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Actinide-Dilution-with-Matching-model">Actinide-Dilution with Matching model<a class="anchor-link" href="#Actinide-Dilution-with-Matching-model">&#182;</a></h1><p><br><center><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4"/></center></p>
+<h1 id="Actinide-Dilution-with-Matching-model">Actinide-Dilution with Matching model<a class="anchor-link" href="#Actinide-Dilution-with-Matching-model">&#182;</a></h1><p><br><center><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=100%/></center></p>
 <p><br>Uses a Monte-Carlo method with constraints from observed abundances</p>
 <p>Builds empircal mass ejecta distributions as a function of $Y_e$ between 0.005 and 0.450</p>
 <aside class="notes">
@@ -12619,7 +12754,7 @@ What these results appear to sugges is that actinide-boost stars maybe do not re
 <h1 id="Future-work">Future work<a class="anchor-link" href="#Future-work">&#182;</a></h1><p><br>Continue <em>R</em>PA observations of metal-poor stars</p>
 <p>Use <em>R</em>PA data as AD+M input</p>
 <p>Extend AD+M to different astrophysical parameters/sites</p>
-<p>Test AD+M with mass model variations</p>
+<p>Test AD+M with nuclear physics variations</p>
 
 </div>
 </div>
