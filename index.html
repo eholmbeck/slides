@@ -12014,7 +12014,8 @@ The first step we are taking is through observation. One of our goals is to iden
 <h1 id="RPA-status"><em>R</em>PA status<a class="anchor-link" href="#RPA-status">&#182;</a></h1><p><br>Snapshot high-resolution data obtained for ~1350 (of target 2500) stars</p>
 <p>Expect 3-5% to be <em>r</em>-II stars</p>
 <p><br></p>
-<h3 id="Identified-over-30-new-r-II-stars-(of-~500-analyzed)">Identified over 30 new <em>r</em>-II stars (of ~500 analyzed)<a class="anchor-link" href="#Identified-over-30-new-r-II-stars-(of-~500-analyzed)">&#182;</a></h3><p><br><center><img src="./img/Magellan.jpg" alt="Magellan" style="width: 100%" align="center"/></center></p>
+<h3 id="Identified-over-30-new-r-II-stars-(of-~500-analyzed)">Identified over 30 new <em>r</em>-II stars (of ~500 analyzed)<a class="anchor-link" href="#Identified-over-30-new-r-II-stars-(of-~500-analyzed)">&#182;</a></h3><p><br><center><img src="./img/Magellan.jpg" alt="Magellan" style="width: 100%" align="center"/></center>
+<small> Magellan Telescopes, Las Campanas Observatory, Chile </small></p>
 <aside class="notes">
 Through this huge undertaking, the R-Process Alliance has already observed about 1350 metal-poor stars. I have personally observed about 400 of those. We expect about 3 to 5 percent of metal-poor stars to be r-II stars, so it's necessary to observe such a large number of metal-poor stars to get to our goal of 75. The analysis is very slow, so only about 500 have been analyzed so far, about 300 of which I've done personally. Of those 500, we have already identified over 30 new r-II stars. As of a few years ago, we only knew of about 30 r-II stars that existed, so we already doubled that number.
 </aside>
@@ -12082,8 +12083,7 @@ We have had a lot of succes already as a direct or indirect result of this obser
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Uranium-in-RAVE-J203843.2-002333">Uranium in RAVE J203843.2-002333<a class="anchor-link" href="#Uranium-in-RAVE-J203843.2-002333">&#182;</a></h1><p><br><center><img src="./img/Usyn2.png" alt="U" style="width: 50%"></center></p>
-<h2 id="Placco,-Holmbeck+-(2017)"><small>Placco, Holmbeck+ (2017)</small><a class="anchor-link" href="#Placco,-Holmbeck+-(2017)">&#182;</a></h2><aside class="notes">
+<h1 id="Uranium-in-RAVE-J203843.2-002333">Uranium in RAVE J203843.2-002333<a class="anchor-link" href="#Uranium-in-RAVE-J203843.2-002333">&#182;</a></h1><center><img src="./img/Usyn2.png" alt="U" style="width: 50%"></center><h2 id="Placco,-Holmbeck+-(2017)"><small>Placco, Holmbeck+ (2017)</small><a class="anchor-link" href="#Placco,-Holmbeck+-(2017)">&#182;</a></h2><aside class="notes">
 One of the early successes we had was finding an r-II star with an observable Uranium feature. Before, there were only four stars with Uranium measured in their photospheres. Uranium is very hard to measure; it's this little dimple on the edge of this very large Iron feature. 
 </aside>
 </div>
@@ -12199,7 +12199,7 @@ The extent of the r-process to heavy masses depends on the neutron richness of t
 <br>(Korobkin+ 2012; Rosswog+ 2013)</p>
 <p>Vary the initial electron fraction: $Y_e=0.005 - 0.250$</p>
 <hr>
-<p>$Y_e = \left[1+(n_n/n_p)\right]^{-1}$</p>
+<p>$Y_e = \left[1+(n/p)\right]^{-1}$</p>
 <aside class="notes">
 How we are going to do carry out this investigation is by using PRISM: an r-process network solver written by Trevor Sprouse and Matt Mumpower. Prism allows for complete flexibility of the nuclear and astrophysical input.
 For the actinide boost study, we choose a low-entropy, NSM tidal ejecta trajectory and vary the initial electron fraction, called the Y_e. Y_e essentially gives the fraction of nucleons that are protons. So just remember that a lower Y_e means more neutrons, and a higher Y_e is more protons. By varying this Y_e, we are changing the initial seed distribution of nuclei that the r-process starts. We ran 50 separate, full r-process calculations, changing the initial Y_e between 0 and 0.25, and run each of these to 1 Gyr.
@@ -12217,9 +12217,10 @@ For the actinide boost study, we choose a low-entropy, NSM tidal ejecta trajecto
 \dot Y(Z,A) = Y(Z, A-1)\lambda_n^{Z,A-1} + Y(Z,A+1)\lambda_\gamma^{Z, A+1} \\
 \qquad\qquad - Y(Z,A)\left(\lambda_n^{Z,A} + \lambda_\gamma^{Z,A} + \lambda_\beta^{Z,A} + \lambda_{\beta n}^{Z,A} + \lambda_{\beta 2n}^{Z,A} + \lambda_{\beta 3n}^{Z,A}\right) \\
 \qquad\qquad + Y(Z-1, A)\lambda_\beta^{Z-1,A} + Y(Z-1, A+1)\lambda_{\beta n}^{Z-1,A+1} + ...
-\end{equation*}<p>Solve using Implicit Euler method</p>
+\end{equation*}<p>Solve using Implicit Euler method
+<br></p>
 \begin{equation*}
- Y(t, dt) = Y(t) + dt\left[ \dot Y(t+dt)\right]\\
+Y(t, dt) = Y(t) + dt\left[ \dot Y(t+dt)\right]\\
  \frac{Y(t+dt) - Y(t)}{dt} - \dot Y = 0
 \end{equation*}<aside class="notes">
 Find zeros
@@ -12232,13 +12233,17 @@ Find zeros
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Theoretical-$\beta$-decay-rates">Theoretical $\beta$-decay rates<a class="anchor-link" href="#Theoretical-$\beta$-decay-rates">&#182;</a></h2><p>Fermi's Golden rule</p>
-\begin{equation*}
+<h2 id="Theoretical-$\beta$-decay-rates">Theoretical $\beta$-decay rates<a class="anchor-link" href="#Theoretical-$\beta$-decay-rates">&#182;</a></h2><p>Fermi's Golden rule
+<br>
+\begin{equation<em>}
 \lambda \propto \left|\langle{\phi_k(\vec r)}| H |{\phi_0(\vec r)}\rangle \right|^2 \rho(E_F)
-\end{equation*}<p>Find density of states</p>
-\begin{equation*}
+\end{equation</em>}</p>
+<p>Find density of states
+<br>
+\begin{equation<em>}
 \lambda \propto \int_0^{E_0} E_e \left(E_0-E_e\right)^2 \left(E_e^2-m_e^2c^4\right)^{1/2}F(Z,E_e) dE_e
-\end{equation*}
+\end{equation</em>}</p>
+
 </div>
 </div>
 </div></section><section>
@@ -12248,10 +12253,12 @@ Find zeros
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Theoretical-neutron-capture-rates">Theoretical neutron capture rates<a class="anchor-link" href="#Theoretical-neutron-capture-rates">&#182;</a></h2><p>Reaction: $ A + \alpha \rightarrow C \rightarrow B + \beta $
+<br>
 \begin{equation<em>}
 \langle \sigma<em>{\alpha\beta}\rangle \propto \sum</em>{J^\pi} \left(2 J +1\right) \frac{T<em>\alpha(J^\pi) T</em>\beta(J^\pi)}{\sum_C T_C(J_C^\pi)}
-\end{equation</em>}
-Many open channels:
+\end{equation</em>}</p>
+<p>Many open channels:
+<br>
 \begin{align<em>}
 \sum_\beta T<em>C &amp;= \sum</em>{j_\beta} \int_0^{E_0^</em>} \rho<em>\beta(E</em>\beta^<em>) T_C(J<em>C^\pi) dE</em>\beta^</em> \
 T_C(J<em>C^\pi) &amp;\propto \left[\frac{2 J+1}{(2j</em>\alpha + 1)(2 j_\beta +1)}\right]^{-1}
@@ -12283,7 +12290,7 @@ These are the finaly abundance patterns when we start with different values of Y
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Actinide-and-lanthanide-production">Actinide and lanthanide production<a class="anchor-link" href="#Actinide-and-lanthanide-production">&#182;</a></h1><center><img src="./img/Ye_korobkinrh_nbs50_frdm2012_age.png" alt="Ye" style="width: 60%"></center><h2 id="Holmbeck+-(2019)"><small>Holmbeck+ (2019)</small><a class="anchor-link" href="#Holmbeck+-(2019)">&#182;</a></h2><aside class="notes">
+<h1 id="Actinide-and-lanthanide-production">Actinide and lanthanide production<a class="anchor-link" href="#Actinide-and-lanthanide-production">&#182;</a></h1><center><img src="./img/Ye_korobkinrh_nbs50_frdm2012.png" alt="Ye" style="width: 60%"></center><h2 id="Holmbeck+-(2019)"><small>Holmbeck+ (2019)</small><a class="anchor-link" href="#Holmbeck+-(2019)">&#182;</a></h2><aside class="notes">
 This plot is just a summary of how the final Europium, Thorium, and Uranium abundances vary as a function of Y_e, and here we can start to see how material moves through the network as neutron richness is increased. Again, from the higher Y_e end, the lanthanides are just starting to be produced, then decreasing Y_e further, the actinides start growing in. But then, further increasing neutron richness, the actinides start going down. What's happening is that the bulk material is moving up from the actinides and fissions through neutron-induced fission. And correspondingly, we see Europium increase since the fission products deposit near Europium. Then as we keep increasing the neutron richness, those fission fragments are allowed to capture back up to the actinides, then fission again. And this can repeat several times in very neutron-rich environments.
 </aside>
 </div>
@@ -12341,14 +12348,17 @@ Now, let's apply these final abundances to our ages. And we're going to use thes
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay">$\alpha$-decay<a class="anchor-link" href="#$\alpha$-decay">&#182;</a></h2><p>The $\alpha$-decay rate is a function of the probability of forming an $\alpha$ particle in the nucleus ($p_\alpha$), the transmission probability ($\mathcal T$), and the frequency of attempts $\nu$.
+<br>
     \begin{align<em>}
     \lambda &amp;= p_\alpha \nu \mathcal T
-    \end{align</em>}
-The radius of the Coulomb barrier $r_c$ is where $V_c=E_\alpha$. The radius of the well, $r_s$ is approximately equal to the radius of the nucleus plus the radius of the $\alpha$ particle. Assuming a spherical well, with $l=0$,
+    \end{align</em>}</p>
+<p>The radius of the Coulomb barrier $r_c$ is where $V_c=E_\alpha$. The radius of the well, $r_s$ is approximately equal to the radius of the nucleus plus the radius of the $\alpha$ particle. Assuming a spherical well, with $l=0$,
+<br>
     \begin{align<em>}
     r_s &amp;= 1.2 \left[A^{1/3} + 4^{1/3}\right]
-    \end{align</em>}
-Outside the well, the barrier is purely Coulombic.
+    \end{align</em>}</p>
+<p>Outside the well, the barrier is purely Coulombic.
+<br>
     \begin{align<em>}
     V_c(r&gt;r_c) &amp;= \frac{Z_1 Z_2 e^2}{4\pi\epsilon_0 r} = \frac{2.88 Z_2}{r} \textrm{MeV}
     \end{align</em>}</p>
@@ -12362,16 +12372,19 @@ Outside the well, the barrier is purely Coulombic.
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>The radial Schroedinger Equation is
+<br>
     \begin{align<em>}
     \frac{d^2u(r)}{dr^2} + \frac{2\mu}{\hbar^2}\left(E_\alpha - V_c(r)\right) u_r = 0
-    \end{align</em>}
-This has the general solution
+    \end{align</em>}</p>
+<p>This has the general solution
+<br>
     \begin{align<em>}
     u_0(r) &amp;\approx e^{\phi(r)} \
     \frac{du_0(r)}{dr} &amp;= \frac{d\phi(r)}{dr} u_0(r) \
     \frac{d^2 u_0(r)}{dr^2} &amp;= \left(\frac{d\phi(r)}{dr}\right)^2 u_0(r) + \frac{d^2\phi(r)}{dr^2} u_0(r)
-    \end{align</em>}
-Assuming a smoothly-varying Coulomb potential, we can ignore the second term. The Schroedinger Equation becomes
+    \end{align</em>}</p>
+<p>Assuming a smoothly-varying Coulomb potential, we can ignore the second term. The Schroedinger Equation becomes
+<br>
     \begin{gather<em>}
     \left(\frac{d\phi(r)}{dr}\right)^2 u<em>0(r) + \frac{2\mu}{\hbar^2}\left(E</em>\alpha - V_c(r)\right) u<em>r = 0\
     \left(\frac{d\phi(r)}{dr}\right)^2 + \frac{2\mu}{\hbar^2}\left(E</em>\alpha - V_c(r)\right) = 0 \
@@ -12387,10 +12400,12 @@ Assuming a smoothly-varying Coulomb potential, we can ignore the second term. Th
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>There are three regions
+<br>
     \begin{align<em>}
     V(r)-E<em>\alpha &amp;\rightarrow \left{\begin{matrix} E</em>\alpha &amp; 0\leq r &lt; r<em>s \ V(r)-E</em>\alpha &amp; r_s \leq r \leq r<em>c \ -|V(r)-E</em>\alpha| &amp; r_c\leq r \end{matrix}\right.
-    \end{align</em>}
-Which correspond to:
+    \end{align</em>}</p>
+<p>Which correspond to:
+<br>
     \begin{align<em>}
     \frac{d \phi(r)}{dr} &amp;= \pm \left{\begin{matrix} ik_0 &amp; 0\leq r &lt; r_s \ \kappa(r) &amp; r_s \leq r \leq r_c \ i\kappa(r) &amp; r_c\leq r \end{matrix}\right.
     \end{align</em>}</p>
@@ -12404,10 +12419,12 @@ Which correspond to:
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>So wavefunction in the region $r_s<r<r_c$ is
+<br>
     \begin{align<em>}
     u<em>0 &amp;= A\exp\left[\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]+B\exp\left[-\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
-    \end{align</em>}
-We will ignore the contribution from the second term since it represents the wave reflected within the Coulomb barrier, $B=0$.
+    \end{align</em>}</p>
+<p>We will ignore the contribution from the second term since it represents the wave reflected within the Coulomb barrier, $B=0$.
+<br>
     \begin{align<em>}
     u<em>0 &amp;= A\exp\left[\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]\
     |u_0(r_s&lt;r&lt;r<em>c)|^2 &amp;= |A\exp\left[\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]|^2\
@@ -12423,16 +12440,18 @@ We will ignore the contribution from the second term since it represents the wav
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Next is the wavefunction outside of the barrier, $r_c<r$.
-    \begin{align<em>}
+<br>
+\begin{align<em>}
     u<em>0 &amp;= C\exp\left[i\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]+D\exp\left[-i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]
-    \end{align</em>}
-The second term is an incoming wave (not outgoing from the nucleus), so we will ignore that component, $D=0$.
-    \begin{align<em>}
+    \end{align</em>}</p>
+<p>The second term is an incoming wave (not outgoing from the nucleus), so we will ignore that component, $D=0$.
+<br>
+\begin{align<em>}
     u<em>0 &amp;= C\exp\left[i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]\
     |u_0(r<em>c&lt;r)|^2 &amp;= |C\exp\left[i\int</em>{r_s}^{r_c}\kappa(r)\,dr\right]|^2\
     |u_0(r_c&lt;r)|^2 &amp;= |C|^2
-    \end{align</em>}
-Boundary conditions require that the wavefunctions in the two regions are equal at the boundary: $C=A$.</p>
+    \end{align</em>}</p>
+<p>Boundary conditions require that the wavefunctions in the two regions are equal at the boundary: $C=A$.</p>
 
 </div>
 </div>
@@ -12443,6 +12462,7 @@ Boundary conditions require that the wavefunctions in the two regions are equal 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Transmission coefficient, $\mathcal T$. Within the barrier, approximate $r_s \ll r_c$, therefore we can ignore the region of $r<r_s$.
+<br>
     \begin{align<em>}
     \mathcal T &amp;= \frac{|u_0(r_c\leq r)|^2}{|u_0(r_s\leq r &lt; r<em>c)|^2}\
     \mathcal T &amp;= \frac{|A|^2}{|A|^2\exp\left[2\int</em>{r_s}^{r<em>c}\kappa(r)\,dr\right]}\
@@ -12458,14 +12478,17 @@ Boundary conditions require that the wavefunctions in the two regions are equal 
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Now what's left is to solve this integral. Within the Coulomb barrier,
+<br>
     \begin{align<em>}
     \phi<em>+(r) &amp;= \int</em>{r_s}^{r<em>c}\sqrt{\frac{2\mu}{\hbar^2}\left[V(r)-E</em>\alpha\right]} dr
-    \end{align</em>}
-The upper limit of the integral is where $V(r_c)=E_\alpha$. By this condition, the value of the integral is
+    \end{align</em>}</p>
+<p>The upper limit of the integral is where $V(r_c)=E_\alpha$. By this condition, the value of the integral is
+<br>
     \begin{align<em>}
     \phi<em>+(r) &amp;=\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\cos^{-1}\sqrt{\frac{r_s}{r_c}} - \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r_c}\right)}\right]
-    \end{align</em>}
-So the transmission coefficient is
+    \end{align</em>}</p>
+<p>So the transmission coefficient is
+<br>
     \begin{align<em>}
     \mathcal T &amp;= \exp\left[-2\sqrt{\frac{2\mu E_\alpha}{\hbar^2}}r_c\left[\cos^{-1}\sqrt{\frac{r_s}{r_c}} - \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r<em>c}\right)}\right] \right]\
     \ln \mathcal T &amp;= -2\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\cos^{-1}\sqrt{\frac{r_s}{r_c}} - \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r_c}\right)}\right]
@@ -12480,18 +12503,21 @@ So the transmission coefficient is
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="$\alpha$-decay-(cont.)">$\alpha$-decay (cont.)<a class="anchor-link" href="#$\alpha$-decay-(cont.)">&#182;</a></h2><p>Next we can apply again the approximation that $r_s\ll r_c$.
+<br>
     \begin{align<em>}
     \cos^{-1}\sqrt{\frac{r_s}{r_c}} &amp;\approx \frac{\pi}{2}-\sqrt{\frac{r_s}{r_c}}\
      \sqrt{\frac{r_s}{r_c}\left(1-\frac{r_s}{r_c}\right)} &amp;\approx \sqrt{\frac{r_s}{r<em>c}}\
     \ln \mathcal T &amp;\approx -2\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\frac{\pi}{2}-\sqrt{\frac{r_s}{r_c}}-\sqrt{\frac{r_s}{r<em>c}}\right]\
     \ln \mathcal T &amp;\approx -\sqrt{\frac{2\mu E</em>\alpha}{\hbar^2}}r_c\left[\pi-4\sqrt{\frac{r_s}{r_c}}\right]
-    \end{align</em>}
-Use the $Q$-value from the reaction to get $E_\alpha$, and solve for $r_s$ and $r_c$ with
+    \end{align</em>}</p>
+<p>Use the $Q$-value from the reaction to get $E_\alpha$, and solve for $r_s$ and $r_c$ with
+<br>
     \begin{align<em>}
     r_s &amp;= 1.2\text{ fm}\left(A^{1/3}+4^{1/3}\right) = 8.97\text{ fm}\
     r_c &amp;= \frac{2 Z \alpha\hbar c}{Q} = 446.415\text{ fm}
-    \end{align</em>}
-Giving a value of $\ln\mathcal T=-357.8$. Then use 
+    \end{align</em>}</p>
+<p>Giving a value of $\ln\mathcal T=-357.8$. Then use 
+<br>
     \begin{align<em>}
     p<em>\alpha &amp;= 0.1\
     \nu &amp;= \frac{\sqrt{E</em>\alpha}}{A^{1/3}} \times 2.9\times 10^{21} \text{ s}^{-1}\
@@ -12718,9 +12744,9 @@ Just for comparison, as a middle ground between the two actinide extremes is ano
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Actinide-Dilution-with-Matching-model">Actinide-Dilution with Matching model<a class="anchor-link" href="#Actinide-Dilution-with-Matching-model">&#182;</a></h1><p><br><center><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=100%/></center></p>
-<p><br>Uses a Monte-Carlo method with constraints from observed abundances</p>
-<p>Builds empircal mass ejecta distributions as a function of $Y_e$ between 0.005 and 0.450</p>
+<h1 id="Actinide-Dilution-with-Matching-model">Actinide-Dilution with Matching model<a class="anchor-link" href="#Actinide-Dilution-with-Matching-model">&#182;</a></h1><p>Uses a Monte-Carlo method with constraints from observed abundances</p>
+<p>Builds empircal mass ejecta distributions as a function of $Y_e$ (0.005-0.450)</p>
+<p><br><center><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=100%/></center></p>
 <aside class="notes">
 In this model, instead of using a distribution of Y_e motivated by literature, I instead use the observations of these groups of r-II stars to work backwards and build an empirical distribution that characterizes the ejecta from an r-process event with something I like to call the "Actinide-Dilution with Matching" Model, or AD+M. 
 
