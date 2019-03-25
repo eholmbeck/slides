@@ -12287,6 +12287,22 @@ AD model
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Actinide-Dilution-with-Matching-model">Actinide-Dilution with Matching model<a class="anchor-link" href="#Actinide-Dilution-with-Matching-model">&#182;</a></h1><p><br>Uses a Monte-Carlo method with constraints from observed abundances</p>
+<p>Builds empircal mass ejecta distributions as a function of $Y_e$ (0.005-0.450)</p>
+<p><br><center><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=100%/></center></p>
+<aside class="notes">
+In this model, instead of using a distribution of Y_e motivated by literature, I instead use the observations of these groups of r-II stars to work backwards and build an empirical distribution that characterizes the ejecta from an r-process event with something I like to call the "Actinide-Dilution with Matching" Model, or ADM. 
+
+First, we ran several r-process calculations, using an accretion disk wind, varying the Y_e between 0 and 0.45. Then, this model uses a simple Monte-Carlo method to randomly select a number of Y_e values and the associated final abundances. Then, the final abundances are summed, and if the sum of the abundances match observational abundances within some tolerance, we keep those Y_e values. Then we repeat this at until we build up a mass distribution consisting of over one thousand Y_e's.
+</aside>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Reticulum-II">Reticulum II<a class="anchor-link" href="#Reticulum-II">&#182;</a></h1><p><br><center><img src="./img/retii.png" style="width: 95%"/></center></p>
 <h2 id="Ji+-(2016)"><small>Ji+ (2016)</small><a class="anchor-link" href="#Ji+-(2016)">&#182;</a></h2><aside class="notes">
 So let's turn to one the strongest observational suggestions that NSMs gave rise to the r-II stars. Reticulum II is an ultra-faint, dark matter-dominated dwarf galaxy, a satellite of the MW (about 30 kpc away). Alex Ji et al. took high-resolution spectra and measured elemental abundances of nine stars in that galaxy. Seven of them turned out to be r-II stars. Since the galaxy is so small, this entire group of stars was likely polluted by the same r-process event.
@@ -12310,23 +12326,7 @@ Just for comparison, as a middle ground between the two actinide extremes is ano
 </aside>
 </div>
 </div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Actinide-Dilution-with-Matching-model">Actinide-Dilution with Matching model<a class="anchor-link" href="#Actinide-Dilution-with-Matching-model">&#182;</a></h1><p><br>Uses a Monte-Carlo method with constraints from observed abundances</p>
-<p>Builds empircal mass ejecta distributions as a function of $Y_e$ (0.005-0.450)</p>
-<p><br><center><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=100%/></center></p>
-<aside class="notes">
-In this model, instead of using a distribution of Y_e motivated by literature, I instead use the observations of these groups of r-II stars to work backwards and build an empirical distribution that characterizes the ejecta from an r-process event with something I like to call the "Actinide-Dilution with Matching" Model, or AD+M. 
-
-First, we ran several r-process calculations, using an accretion disk wind, varying the Y_e between 0 and 0.45. Then, this model uses a simple Monte-Carlo method to randomly select a number of Y_e values and the associated final abundances. Then, the final abundances are summed, and if the sum of the abundances match observational abundances within some tolerance, we keep those Y_e values. Then we repeat this at until we build up a mass distribution consisting of over one thousand Y_e's.
-</aside>
-</div>
-</div>
-</div></section></section><section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
