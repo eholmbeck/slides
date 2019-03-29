@@ -484,8 +484,8 @@ body {
  *********************************************/
 .reveal {
   position: relative;
-  /*margin: 0 -70px; /* Erika Holmbeck added this on 9 Oct 18 */
-  width: 100%;
+  margin: 0 -70px; /* Erika Holmbeck added this on 9 Oct 18 */
+  /*width: 100%;*/
   height: 100%;
   overflow: hidden;
   -ms-touch-action: none;
