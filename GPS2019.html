@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>Holmbeck Presentation</title>
+
+ <meta name="description" content="An HTML Presentation by Erika Holmbeck">
+ <meta name="author" content="Erika Holmbeck">
+
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+ <!--  Extra fonts -->
+<!--  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'> -->
+<!--  <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'> -->
+
+<!-- General and theme style sheets -->
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+ <!-- Code syntax highlighting -->
+ <link rel="stylesheet" href="lib/css/zenburn.css">
+
+ <!-- Printing and PDF exports -->
+ <script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+ </script>
+
+ <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+ <![endif]-->
+<style>
+.m-highlight-white {color: #ffffff !important}
+.m-highlight-red {color: #ff2c2d !important}
+.m-highlight-gray {color: #939393 !important}
+.m-highlight-ltgray {color: #d5d5d5 !important}
+.m-highlight-blue {color: #1b91ff !important}
+.m-highlight-green {color: #009900 !important}
+.m-highlight-orange {color: #FF8C00 !important}
+.m-highlight-purple {color: #885ead !important}
+.m-highlight-pink {color: #FFB6C1 !important}
+.m-highlight-black {color: #000000 !important}
+.no-box {box-shadow: 0 0 0 rgba(0,0,0,0);}
+.text-dotted {border-bottom: 1px dotted #000; text-decoration: none;}
+
+.m-color-1  {color: #008e5b}
+.m-color-2  {color: #8cbb26}
+.m-color-3  {color: #f4e500}
+.m-color-4  {color: #fdc60b}
+.m-color-5  {color: #f18e1c}
+.m-color-6  {color: #ea621f}
+.m-color-7  {color: #e32322}
+.m-color-8  {color: #c4037d}
+.m-color-9  {color: #6d398b}
+.m-color-10 {color: #444e99}
+.m-color-11 {color: #2a71b0}
+.m-color-12 {color: #0696bb}
+
+
+.fragment.current-visible.visible:not(.current-fragment) {
+  display: none;
+  height:0px;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+.reveal .rs .citation {
+  position:absolute;
+  color: #939393;
+  font-size: 1em;
+  bottom: 0em;
+  right: 0;
+  text-align: right;
+}
+
+.reveal .rs .caption-white {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.4em;
+  bottom: 2em;
+  right: 0;
+  text-align: right;
+}
+
+#quotescointainer {
+  width: 100%;
+  overflow: hidden; /* contain floated elements */
+}
+#quotesleft {
+  float: left;
+  width: 33%;
+}
+#quotescenter {
+  float: left;
+  width: 33%;
+}
+#quotesright{
+  float: left;
+  width: 33%;
+}
+
+
+.reveal section img {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  border:0px;
+}
+
+.prettyscript {
+/*   font: 400 1em 'Arizonia', Helvetica, sans-serif !important; */
+/*   font: 400 0.85em 'Great Vibes', Helvetica, sans-serif !important; */
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+</style>
+</head>
+
+<body>
+
+ <div class="reveal">
+
+ <!-- Any section element inside of this container is displayed as a slide -->
+ <div id="Title" class="slides">
+  <section>
+	<h1>Actinide-Boost Stars may not<br>Suggest a Separate <em>r</em>-Process Site</h1>
+	<h2><br>Erika M. Holmbeck</h2>
+    <h3><br>17 April 2019</h3>
+  </section>
+  
+  <section id="Solar-pattern" class="rs"> 
+    <h1>Elements in the Universe</h1>
+    <img src="./img/Solar_ncap.png" alt="processes" style="width: 75%; margin-top:30px; margin-bottom:25px">
+    <h2><small>from data in Sneden+ (2008)</small></h2>
+  </section>
+  
+  <section id="n-capture" class="rs">
+    <h1>Neutron capture</h1>
+    <img src="./img/ncap_paths.png" alt="processes" style="width: 100%; margin-top:30px; margin-bottom:25px">
+  </section>
+  
+  <section id="r-process-movie" class="rs">
+    <h1>The <em>r</em>-process</h1>
+    <video controls src="./img/korobkinrh_nbs50_frdm2012_new_nseYe0350.mp4" width=70%> 
+  </section>
+
+  <section id="r-process-stars" class="rs"> 
+    <h1><em>r</em>-process enhanced stars</h1>
+    <img src="./img/cs22892-052.png" alt="RPA_logo" style="width: 70%; margin-top:30px; margin-bottom:25px">
+    <h2><small>from data in McWilliam+ (1995), Sneden+ (2003)</small></h2>
+  </section>
+
+  <section id="r-process-site" class="rs">
+    <h1>Site of the <em>r</em>-process?</h1>
+    <p><br>Core-collapse supernovae</p>
+	<p>MHD-jet supernovae</p>
+	<p>Collapsars</p>
+	<p>Neutron-star mergers</p>
+    <p>???</p>
+  </section>
+
+  <!-- 
+  <section id="Ret-II" class="rs" data-background="./img/RetII_spectra.jpg">
+    <h1 class="m-highlight-white">Reticulum II</h1>
+    <h2 class="fragment highlight-white"><img src="./img/retii.png" style="width: 100%; margin-top:30px; margin-bottom:25px"><br>
+    <small>Ji+ (2016)</small></h2>
+    <div class="citation">A. Ji; Dark Energy Survey/Fermilab</div>    
+  </section>
+  -->
+
+  <section id="groups" class="rs">
+    <h1>Groups of <em>r</em>-process enhanced stars</h1>
+    <img src="./img/group_patterns_newGroupF.png" style="width: 60%; margin-top:-30px; margin-bottom:25px">
+    <h2><small>Holmbeck+ (2019)</small></h2>
+  </section>
+
+  <section id="research-question" class="rs">
+    <section id="fragments">
+    <h1><span class="m-highlight-black">Are stars boosted with actinides<br>made by a <b>different source</b></h1>
+    <h1 class="fragment"><br>Can <b>one</b> event produce<br>the <b>entire</b> <em>r</em>-process pattern</h1>
+	  <aside class="notes">
+	  This slide has fragments which are also stepped through in the notes window.
+      </aside>
+    </section>
+  </section>
+
+  <section id="adm-model" class="rs">
+    <h1>Actinide-Dilution with Matching model</h1>
+    <br><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=95%>
+    <p><br>Builds empircal mass ejecta distributions as a function of $Y_e$ (0.005-0.450)</p>
+    <p>To explain entire pattern from Zr to U</p>
+  </section>
+  
+  <section>
+    <h1>ADM abundance pattern for Ret II</h1>
+    <img src="./img/ab_s040t020y200_frdm2012_RetII.png" alt="Ye" style="width: 65%; margin-top:30px; margin-bottom:25px">
+    <h2><small>Holmbeck+ (2019)</small></h2>
+  </section>
+  
+  <section>
+    <h1>Empirically built ejecta mass distributions</h1>
+    <img src="./img/mass_nbs50_frdm2012.png" alt="Ye" style="width: 60%; margin-top:10px">
+    <h2><small>Holmbeck+ (2019)</small></h2>
+  </section>
+
+  <section>
+    <h1>Actinide-boost stars <b>do not</b> call for <br>a separate <em>r</em>-process progenitor</h1>
+    <h2 class="fragment"><br>Is this source an NSM?</h2>
+  </section>
+
+  <section>
+  	<h1>GW170817: two ejecta components</h1>
+    <img src="./img/ADM_xlan1.png" alt="Ye" style="width: 100%; margin-top=-30px">
+  </section>
+
+  <section>
+  	<h1>GW170817: two ejecta components</h1>
+    <img src="./img/ADM_xlan2.png" alt="Ye" style="width: 100%; margin-top=-30px">
+  </section>
+
+  <section>
+    <h1>Results derived from <em>r</em>-II stars <br>agree* with an NSM observation</h1>
+    <h2 class="fragment"><br>Further evidence that an NSM occurred in Ret II?</h2>
+  </section>
+  
+  <section>
+    <h1>Special Thanks</h1>
+    <p><br> Rebecca Surman (ND), Nicole Vassh (ND), Matthew Mumpower (LANL), Trevor M. Sprouse (ND)
+    <br> Gail C. McLaughlin (NC State), Anna Frebel (MIT)</p>
+    <p>Timothy C. Beers (ND), Terese T. Hansen (TAMU), Chris Sneden (UT-Austin), Vinicius M. Placco (ND),
+    <br> Ian U. Roederer (UMich.), Charli M. Sakari (UW), Rana Ezzeddine (MIT)
+    <br> Grant Mathews (ND), Ani Aprahamian (ND), Toshihiko Kawano (LANL)</p>
+  </section>
+
+
+
+ </div>
+ </div>
+
+ <!-- D3 support -->
+ <script src="js/d3.min.js"></script>
+ <!-- Reveal JS -->
+ <script src="lib/js/head.min.js"></script>
+ <script src="js/reveal.js"></script>
+ 
+ <script>
+
+  // Full list of configuration options available at:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+   // The "normal" size of the presentation, aspect ratio will be preserved
+   // when the presentation is scaled to fit different resolutions. Can be
+   // specified using percentage units.
+//    width:  960,
+//    height: 700,
+
+   // Factor of the display size that should remain empty around the content
+//    margin: 0.1,
+
+   // Bounds for smallest/largest possible scale to apply to content
+//    minScale: 0.2,
+//    maxScale: 1.5,
+//    width: "100%",
+//    height: "100%",
+//    margin: 0,
+//    minScale: 1,
+//    maxScale: 1,
+   slideNumber: false,
+   controls: true,
+   progress: true,
+   history: true,
+   center: true,
+   touch: true,
+   pdfMaxPagesPerSlide: 1,
+   transition: 'none', // none/fade/slide/convex/concave/zoom
+
+   math: {
+    // mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+    mathjax: 'plugin/MathJax-2.7.5/MathJax.js',
+    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+    },
+
+   // Optional reveal.js plugins
+   dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+//     { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//     { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }, 
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+    { src: 'plugin/notes/notes.js', async: true }, 
+    { src: 'plugin/math/math.js', async: true }
+   ]});
+
+//    Reveal.addEventListener( 'fragmentshown', function( event ) {
+    // event.fragment = the fragment DOM element
+//    } );
+//    Reveal.addEventListener( 'fragmenthidden', function( event ) {
+    // event.fragment = the fragment DOM element
+//    } );
+
+ </script>
+
+<!-- google tracking -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-7887620-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- google tracking -->
+
+</body>
+</html>
