@@ -138,22 +138,45 @@
     <h1>Elements in the Universe</h1>
     <img src="./img/Solar_ncap.png" alt="processes" style="width: 75%; margin-top:30px; margin-bottom:25px">
     <h2><small>from data in Sneden+ (2008)</small></h2>
+    <aside class="notes">
+      Here on Earth and in the Solar System, we find a full range of elements from the light elements created in the Big Bang to the actinides, Th and U.
+      The most abundant elements were made through fusion processes, but the majority of the periodic table is made through neutron-capture.
+      One of the most important neutron-capture processes is rapid neutron capture, or the r-process.
+    </aside>
   </section>
   
+  <!--
   <section id="n-capture" class="rs">
     <h1>Neutron capture</h1>
     <img src="./img/ncap_paths.png" alt="processes" style="width: 100%; margin-top:30px; margin-bottom:25px">
+    <aside class="notes">
+      Specifically there is the, the slow neutron capture process (or s-process), 
+      where the timescale to capture neutrons is slower than beta decay.
+      And rapid neutron capture (or r-process), where successive neutron captures occur before the nucleus beta-decays.
+      As a result the s-process takes place very close to stability, and the r-process very far from stability, 
+    </aside>
   </section>
+  -->
   
   <section id="r-process-movie" class="rs">
     <h1>The <em>r</em>-process</h1>
     <video controls src="./img/korobkinrh_nbs50_frdm2012_new_nseYe0350.mp4" width=70%> 
+    <aside class="notes">
+      This is a movie showing how the r-process may proceed along the chart of nuclides.
+      Under very neutron rich conditions, the r-process takes place very far from stability, almost to the neutron drip line.
+      Eventually, the neutron flux decreases, and the nuclei beta decay back to stability and form this r-process abundance pattern.
+    </aside>
   </section>
 
   <section id="r-process-stars" class="rs"> 
     <h1><em>r</em>-process enhanced stars</h1>
     <img src="./img/cs22892-052.png" alt="RPA_logo" style="width: 70%; margin-top:30px; margin-bottom:25px">
     <h2><small>from data in McWilliam+ (1995), Sneden+ (2003)</small></h2>
+    <aside class="notes">
+      We know that this r-process must occur somewhere in the Universe because we observe stars that have these r-process patterns.
+      In black is the abundance pattern of a very famous r-process enhanced star, and the purple line is the r-process abundance pattern we observe in our own Solar System.
+      This is not a fit. The black points basically duplicate this pattern, meaning that an r-process occurred and enriched this star. 
+    </aside>
   </section>
 
   <section id="r-process-site" class="rs">
@@ -163,6 +186,11 @@
 	<p>Collapsars</p>
 	<p>Neutron-star mergers</p>
     <p>???</p>
+    <aside class="notes">
+      Even though we know the r-process happens, we still don't know where.
+      Recently, neutron star mergers have been confirmed as one site of lanthanide production, 
+      but we don't know if they are responsible for the majority of r-process material.
+    </aside>
   </section>
 
   <!-- 
@@ -178,6 +206,11 @@
     <h1>Groups of <em>r</em>-process enhanced stars</h1>
     <img src="./img/group_patterns_newGroupF.png" style="width: 60%; margin-top:-30px; margin-bottom:25px">
     <h2><small>Holmbeck+ (2019)</small></h2>
+    <aside class="notes">
+      One interesting thing about these enhanced stars is that their r-process patterns are mostly the same (between Ba and Hf).
+      However, there is a distinct different in the heaviest r-process elements, the actinides, Th and U.
+      This group of stars, Reticulum II, shows a very low actinide abundance, this Group F a normal amount, and this star a very high amount of Th, called an actinide-boost star.
+    </aside>
   </section>
 
   <section id="research-question" class="rs">
@@ -185,48 +218,82 @@
     <h1><span class="m-highlight-black">Are stars boosted with actinides<br>made by a <b>different source</b></h1>
     <h1 class="fragment"><br>Can <b>one</b> event produce<br>the <b>entire</b> <em>r</em>-process pattern</h1>
 	  <aside class="notes">
-	  This slide has fragments which are also stepped through in the notes window.
+	  What we wanted to know is whether the stars boosted with actinides are made by a different r-process source than the
+	  actinide-normal or actinide-deficient stars.
+	  Their patterns are both r-process patterns, except for this distinct variation in the actinides.
       </aside>
     </section>
   </section>
 
   <section id="adm-model" class="rs">
     <h1>Actinide-Dilution with Matching model</h1>
-    <br><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=95%>
     <p><br>Builds empircal mass ejecta distributions as a function of $Y_e$ (0.005-0.450)</p>
     <p>To explain entire pattern from Zr to U</p>
+    <br><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=95%>
+	<aside class="notes">
+	  So to do this we built a Monte Carlo model that builds an ejecta mass distribution
+	  characterizing the r-process event that could have made these stars.
+    </aside>
   </section>
   
   <section>
     <h1>ADM abundance pattern for Ret II</h1>
     <img src="./img/ab_s040t020y200_frdm2012_RetII.png" alt="Ye" style="width: 65%; margin-top:30px; margin-bottom:25px">
     <h2><small>Holmbeck+ (2019)</small></h2>
+	<aside class="notes">
+	  The results of this model for the actinide-deficient group reproduce the abundance pattern.
+    </aside>
   </section>
   
   <section>
     <h1>Empirically built ejecta mass distributions</h1>
     <img src="./img/mass_nbs50_frdm2012.png" alt="Ye" style="width: 60%; margin-top:10px">
     <h2><small>Holmbeck+ (2019)</small></h2>
+	<aside class="notes">
+	  And these are the ejecta mass distributions that we built.
+	  Remember the main difference between these three stars is the Th abundance.
+	  The mass distribution for an actinide-poor case leads to less material in this very neutron-rich region,
+	  and an actinide-boost case allows a lot of material in this region.
+	  Overall, I think these distributions look the same, with some variation in this low-Ye region.
+    </aside>
   </section>
 
   <section>
     <h1>Actinide-boost stars <b>do not</b> call for <br>a separate <em>r</em>-process progenitor</h1>
     <h2 class="fragment"><br>Is this source an NSM?</h2>
+	<aside class="notes">
+	  This could mean that the stars showing the extra enhancement of actinides could be made by the same r-process site as the actinide-deficient case.
+	  For example, maybe NSMs could produce both actinide-rich and actinide-poor cases.
+	  Well, we have one observation of a NSM, so let's compare our distribution to it.
+    </aside>
   </section>
 
   <section>
-  	<h1>GW170817: two ejecta components</h1>
+  	<h1>Two ejecta components</h1>
     <img src="./img/ADM_xlan1.png" alt="Ye" style="width: 100%; margin-top=-30px">
+	<aside class="notes">
+	  To explain the lightcurve from GW170817, there must have been at least two components:
+	  a lanthanide-poor blue component, and a lanthanide-rich red component.
+	  So we split our mass distribution for RetII into these blue and red components and find the lanthanide mass
+	  fractions and the mass ratio between them.
+    </aside>
   </section>
 
   <section>
-  	<h1>GW170817: two ejecta components</h1>
+  	<h1>Two ejecta components</h1>
     <img src="./img/ADM_xlan2.png" alt="Ye" style="width: 100%; margin-top=-30px">
+	<aside class="notes">
+	  Then we compare that to an estimate of GW170817, and find pretty similar numbers.
+    </aside>
   </section>
 
   <section>
     <h1>Results derived from <em>r</em>-II stars <br>agree* with an NSM observation</h1>
     <h2 class="fragment"><br>Further evidence that an NSM occurred in Ret II?</h2>
+	<aside class="notes">
+	  What we derived from observations of stars is similar to results derived from a NSM observation.
+	  This could suggest that the r-process enhanced stars like Ret II were indeed enriched by a NSM event.
+    </aside>
   </section>
   
   <section>
