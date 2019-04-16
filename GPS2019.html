@@ -128,8 +128,8 @@
 
  <!-- Any section element inside of this container is displayed as a slide -->
  <div id="Title" class="slides">
-  <section>
-	<h1>Actinide-Boost Stars may not<br>Suggest a Separate <em>r</em>-Process Site</h1>
+  <section class="rs">
+	<h1>Actinide-Boost Stars Might Not<br>Suggest a Separate <em>r</em>-Process Site</h1>
 	<h2><br>Erika M. Holmbeck</h2>
     <h3><br>17 April 2019</h3>
   </section>
@@ -137,7 +137,7 @@
   <section id="Solar-pattern" class="rs"> 
     <h1>Elements in the Universe</h1>
     <img src="./img/Solar_ncap.png" alt="processes" style="width: 75%; margin-top:30px; margin-bottom:25px">
-    <h2><small>from data in Sneden+ (2008)</small></h2>
+    <h4 class="m-highlight-gray">from data in Sneden+ (2008)</h4>
     <aside class="notes">
       Here on Earth and in the Solar System, we find a full range of elements from the light elements created in the Big Bang to the actinides, Th and U.
       The most abundant elements were made through fusion processes, but the majority of the periodic table is made through neutron-capture.
@@ -171,7 +171,7 @@
   <section id="r-process-stars" class="rs"> 
     <h1><em>r</em>-process enhanced stars</h1>
     <img src="./img/cs22892-052.png" alt="RPA_logo" style="width: 70%; margin-top:30px; margin-bottom:25px">
-    <h2><small>from data in McWilliam+ (1995), Sneden+ (2003)</small></h2>
+    <h4 class="m-highlight-gray">from data in McWilliam+ (1995), Sneden+ (2003)</h4>
     <aside class="notes">
       We know that this r-process must occur somewhere in the Universe because we observe stars that have these r-process patterns.
       In black is the abundance pattern of a very famous r-process enhanced star, and the purple line is the r-process abundance pattern we observe in our own Solar System.
@@ -211,9 +211,9 @@
   </section>
   
   <section id="groups" class="rs">
-    <h1>Groups of <em>r</em>-process enhanced stars</h1>
-    <img src="./img/group_patterns_GroupF_wes00.png" style="width: 60%; margin-top:-30px; margin-bottom:25px">
-    <h2><small>Holmbeck+ (2019)</small></h2>
+    <h1>Actinide variation among <em>r</em>-process enhanced stars</h1>
+    <img src="./img/group_patterns_GroupF_wes00.png" style="width: 60%; margin-bottom:25px">
+    <h4 class="m-highlight-gray">Holmbeck+ (2019); arXiv:1904.02139</h4>
     <aside class="notes">
       One interesting thing about these enhanced stars is that their r-process patterns are mostly the same (between Ba and Hf).
       However, there is a distinct different in the heaviest r-process elements, the actinides, Th and U.
@@ -223,28 +223,32 @@
 
   <section id="research-question" class="rs">
     <section id="fragments">
-    <h1><span class="m-highlight-black">Are stars boosted with actinides<br>made by a <b>different source</b></h1>
-    <h1 class="fragment"><br>Can <b>one</b> event produce<br>the <b>entire</b> <em>r</em>-process pattern</h1>
+    <h1><span class="m-highlight-black">Are stars boosted with actinides<br>made by a <b>different source?</b></h1>
+    <h1 class="fragment"><br>Can <b>one</b> site produce<br>the actinide variations?</h1>
 	  <aside class="notes">
-	  What we wanted to know is whether the stars boosted with actinides are made by a different r-process source than the
-	  actinide-normal or actinide-deficient stars.
-	  Their patterns are both r-process patterns, except for this distinct variation in the actinides.
+	  This actinide difference can be interpreted as a hint of a different r-process source.
+	  Perhaps the actinide-poor signature was made from a rare type of SN, 
+	  and the actinide-boost signature from a NSM, for example.
+	  Alternatively, the first question we want to answer is the null hypothesis:
+	  whether the difference is significant enough to point to another r-process site.
       </aside>
     </section>
   </section>
 
-  <!--
   <section id="adm-model" class="rs">
     <h1>Actinide-Dilution with Matching model</h1>
-    <p><br>Builds empircal mass ejecta distributions as a function of $Y_e$ (0.005-0.450)</p>
-    <p>To explain entire pattern from Zr to U</p>
+    <p><br>Builds empircal mass ejecta distributions as a function of <em>Ye</em></p>
+    <p>To explain entire <em>r</em>-process pattern from Zr to U</p>
     <br><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=95%>
 	<aside class="notes">
 	  So to do this we built a Monte Carlo model that builds an ejecta mass distribution
 	  characterizing the r-process event that could have made these stars.
+	  We build this distribution as a function of Ye, the initial electron fraction, since Ye is
+	  one of the main factors that determines the final actinide abundance.
     </aside>
   </section>
   
+  <!--
   <section>
     <h1>ADM abundance pattern for Ret II</h1>
     <img src="./img/ab_s040t020y200_frdm2012_RetII.png" alt="Ye" style="width: 65%; margin-top:30px; margin-bottom:25px">
@@ -258,9 +262,9 @@
   <section>
     <h1>Empirically built ejecta mass distributions</h1>
     <img src="./img/mass_nbs50_frdm2012.png" alt="Ye" style="width: 60%; margin-top:10px">
-    <h2><small>Holmbeck+ (2019)</small></h2>
+    <h4 class="m-highlight-gray">Holmbeck+ (2019); arXiv:1904.02139</h4>
 	<aside class="notes">
-	  And these are the ejecta mass distributions that we built.
+	  And these are the ejecta mass distributions that we built by matching to observational abundances.
 	  Remember the main difference between these three stars is the Th abundance.
 	  The mass distribution for an actinide-poor case leads to less material in this very neutron-rich region,
 	  and an actinide-boost case allows a lot of material in this region.
@@ -308,11 +312,11 @@
   
   <section>
     <h1>Special Thanks</h1>
-    <p><br> Rebecca Surman (ND), Nicole Vassh (ND), Matthew Mumpower (LANL), Trevor M. Sprouse (ND)
-    <br> Gail C. McLaughlin (NC State), Anna Frebel (MIT)</p>
-    <p>Timothy C. Beers (ND), Terese T. Hansen (TAMU), Chris Sneden (UT-Austin), Vinicius M. Placco (ND),
-    <br> Ian U. Roederer (UMich.), Charli M. Sakari (UW), Rana Ezzeddine (MIT)
-    <br> Grant Mathews (ND), Ani Aprahamian (ND), Toshihiko Kawano (LANL)</p>
+    <p><br>Rebecca Surman (ND), Gail C. McLaughlin (NC State), Anna Frebel (MIT)
+    <br>Trevor M. Sprouse (ND), Matthew Mumpower (LANL)</p>
+    <p>Timothy C. Beers (ND), Nicole Vassh (ND), Terese T. Hansen (TAMU), Chris Sneden (UT-Austin)
+    <br>Vinicius M. Placco (ND), Ian U. Roederer (UMich.), Charli M. Sakari (UW), Rana Ezzeddine (MIT)
+    <br>Grant Mathews (ND), Ani Aprahamian (ND), Toshihiko Kawano (LANL)</p>
   </section>
 
 
