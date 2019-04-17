@@ -41,7 +41,7 @@
 .m-highlight-red {color: #ff2c2d !important}
 .m-highlight-gray {color: #939393 !important}
 .m-highlight-ltgray {color: #d5d5d5 !important}
-.m-highlight-blue {color: #1b91ff !important}
+.m-highlight-blue {color: #0000ff !important}
 .m-highlight-green {color: #009900 !important}
 .m-highlight-orange {color: #FF8C00 !important}
 .m-highlight-purple {color: #885ead !important}
@@ -136,23 +136,23 @@
   
   <section id="Solar-pattern" class="rs"> 
     <h1>Elements in the Universe</h1>
-    <img src="./img/Solar_ncap.png" alt="processes" style="width: 75%; margin-top:30px; margin-bottom:25px">
+    <img src="./img/Solar_ncap.png" alt="processes" style="width: 75%; margin-top:20px; margin-bottom:25px">
     <h4 class="m-highlight-gray">from data in Sneden+ (2008)</h4>
     <aside class="notes">
       Here on Earth and in the Solar System, we find a full range of elements from the light elements created in the Big Bang to the actinides, Th and U.
       The most abundant elements were made through fusion processes, but the majority of the periodic table is made through neutron-capture.
-      One of the most important neutron-capture processes is rapid neutron capture, or the r-process.
     </aside>
   </section>
   
   <section id="n-capture" class="rs">
     <h1>Neutron capture</h1>
-    <img src="./img/ncap_paths.png" alt="processes" style="width: 100%; margin-top:30px; margin-bottom:25px">
+    <img src="./img/ncap_paths.png" alt="processes" style="width: 100%; margin-top:20px; margin-bottom:25px">
     <aside class="notes">
       Specifically there is the, the slow neutron capture process (or s-process), 
       where the timescale to capture neutrons is slower than beta decay.
       And rapid neutron capture (or r-process), where successive neutron captures occur before the nucleus beta-decays.
-      As a result the s-process takes place very close to stability, and the r-process very far from stability, 
+      As a result the s-process takes place very close to stability, and the r-process very far from stability,
+      requiring extremely neutron-rich environments.
     </aside>
   </section>
   
@@ -170,7 +170,7 @@
   
   <section id="r-process-stars" class="rs"> 
     <h1><em>r</em>-process enhanced stars</h1>
-    <img src="./img/cs22892-052.png" alt="RPA_logo" style="width: 70%; margin-top:30px; margin-bottom:25px">
+    <img src="./img/cs22892-052.png" style="width: 70%; margin-top:20px; margin-bottom:25px">
     <h4 class="m-highlight-gray">from data in McWilliam+ (1995), Sneden+ (2003)</h4>
     <aside class="notes">
       We know that this r-process must occur somewhere in the Universe because we observe stars that have these r-process patterns.
@@ -236,15 +236,15 @@
   </section>
 
   <section id="adm-model" class="rs">
-    <h1>Actinide-Dilution with Matching model</h1>
-    <p><br>Builds empircal mass ejecta distributions as a function of <em>Ye</em></p>
-    <p>To explain entire <em>r</em>-process pattern from Zr to U</p>
+    <h1>Empirically characterize <em>r</em>-process events</h1>
+    <p><br>Monte Carlo method to produce distributions as a function of <em>Ye</em></p>
     <br><video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width=95%>
 	<aside class="notes">
-	  So to do this we built a Monte Carlo model that builds an ejecta mass distribution
+	  So to investigate this we built a Monte Carlo model that characterizes the r-process event by
+	  building an ejecta mass distribution as a function of initial Ye.
+	  The initial Ye is one parameter that sensitively affects the final actinide abundance.Basically a lower Ye means more neutron rich, and a higher Ye is more proton rich.
 	  characterizing the r-process event that could have made these stars.
-	  We build this distribution as a function of Ye, the initial electron fraction, since Ye is
-	  one of the main factors that determines the final actinide abundance.
+	  We build this distribution as a function of Ye, 
     </aside>
   </section>
   
@@ -260,8 +260,8 @@
   -->
   
   <section>
-    <h1>Empirically built ejecta mass distributions</h1>
-    <img src="./img/mass_nbs50_frdm2012.png" alt="Ye" style="width: 60%; margin-top:10px">
+    <h1>Empirical ejecta mass distributions</h1>
+    <img src="./img/mass_frdm2012_gps2019.png" alt="Ye" style="width: 60%; margin-top:10px">
     <h4 class="m-highlight-gray">Holmbeck+ (2019); arXiv:1904.02139</h4>
 	<aside class="notes">
 	  And these are the ejecta mass distributions that we built by matching to observational abundances.
@@ -283,11 +283,21 @@
   </section>
 
   <section>
-  	<h1>Two ejecta components</h1>
-    <img src="./img/ADM_xlan1.png" alt="Ye" style="width: 100%; margin-top=-30px">
+  	<h1>NSM lightcurve</h1>
+  	<p><br>Lanthanide-poor <span class="m-highlight-blue">blue</span> component + Lanthanide-rich <span class="m-highlight-red">red</span> component</p>
+    <img src="./img/cowperthwaite2017.png" style="width:70%">
+    <h4 class="m-highlight-gray">Cowperthwaite+ (2017)</h4>
 	<aside class="notes">
 	  To explain the lightcurve from GW170817, there must have been at least two components:
 	  a lanthanide-poor blue component, and a lanthanide-rich red component.
+	  So we can do the same thing with our distribution to test if it matches with this observation.
+    </aside>
+  </section>
+
+  <section>
+  	<h1>Two ejecta components</h1>
+    <img src="./img/ADM_xlan1.png" style="width: 100%; margin-top=-100px">
+	<aside class="notes">
 	  So we split our mass distribution for RetII into these blue and red components and find the lanthanide mass
 	  fractions and the mass ratio between them.
     </aside>
