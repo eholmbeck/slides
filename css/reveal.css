@@ -1561,7 +1561,7 @@ body {
   left: 100%;
   padding: 14px 18px 14px 18px;
   z-index: 1;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.4;
   border: 1px solid rgba(0, 0, 0, 0.05);
   color: #222;
@@ -1591,7 +1591,7 @@ body {
 
 @media screen and (min-width: 1600px) {
   .reveal .speaker-notes {
-    font-size: 20px; } }
+    font-size: 16px; } }
 
 @media screen and (max-width: 1024px) {
   .reveal.show-notes {
@@ -1617,7 +1617,7 @@ body {
     height: 66.6666666667%;
     height: 40vh; }
   .reveal .speaker-notes {
-    font-size: 14px; } }
+    font-size: 12px; } }
 
 /*********************************************
  * ZOOM PLUGIN
