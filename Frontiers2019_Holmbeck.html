@@ -113,6 +113,12 @@
   border:0px;
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+
 .prettyscript {
 /*   font: 400 1em 'Arizonia', Helvetica, sans-serif !important; */
 /*   font: 400 0.85em 'Great Vibes', Helvetica, sans-serif !important; */
@@ -125,7 +131,19 @@
 <body>
 
  <div class="reveal">
-
+ 
+ <!--
+ !!!! Include backup slides with the nuclear difference and the astrophysical variations !!!!
+   You might get complaints that it's simple, but...
+   ==> we are trying to elucidate the nature of the r-process, and now we can build more sophisticated models
+ !!! How did you calculate these numbers? How did Dan Kasen calculate these numbers?
+   ==> This is one fit to the kilonova. Other people have done other fits to the lightcurve
+   ==> know the ranges from the Cote paper!!
+ !!! What pieces of nuclear physics are the most important for these?
+   ==> We have found that the fission fragment distribution and beta decay above N=126
+   ==> Plots from first paper (put in backup)
+ -->
+ 
  <!-- Any section element inside of this container is displayed as a slide -->
  <div id="Title" class="slides">
   <section class="rs">
@@ -138,13 +156,40 @@
   </section>
   
   <section class="rs">
-    <h1>Actinides in Stars</h1>
+    <h1>The <em>r</em>-Process Pattern</h1>
     <br>
+    <img src="./img/cs22892-052.png" alt="CS22892-052" style="width: 70%">
+    <br>
+    <h4 class="m-highlight-gray">McWilliam+ (1995); Sneden+ (2003)</h4>
+    <aside class="notes">
+	Elemental and/or isotopic pattern of the r-process; See who goes before you for an isotopic pattern
+    </aside>
+  </section>
+
+  <section class="rs">
+    <h1>Actinides (Th and U) in Stars</h1>
+    <br>
+    <div class="row">
+     <div class="column">
+       &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="./img/Thsyn.png" alt="U" style="width: 80%">
+       <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;J2038-0023</p>
+       <h4 class="m-highlight-gray">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Placco, Holmbeck+ (2017)</h4>
+     </div>
+     <div class="column">
+       <img src="./img/Usyn1.png" alt="J095442" style="width: 80%">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <p>J0954+5246&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+       <h4 class="m-highlight-gray">Holmbeck+ (2018)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</h4>
+     </div>
+    </div>
+    <!--
     <center><br><img src="./img/Usyn2.png" alt="U" style="width: 40%">
     &emsp; <img src="./img/Usyn1.png" alt="J095442" style="width: 40%"></center>
-    <br>
+    <p>J2038-0023 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; J0954+5246</p>
     <h4 class="m-highlight-gray">Placco, Holmbeck+ (2017); Holmbeck+ (2018)</h4>
+    -->
     <aside class="notes">
+    -- Include a Thorium abundance instead? --
+    -- Include star names --
     In some stars, we observe the entire range of r-process elements. 
     And sometimes, we can measure the actinides, Th and U.
     Uranium is very difficult to measure. This is an example for two different stars, and the uranium is just this small bump on the edge of this broad Fe feature.
@@ -159,6 +204,7 @@
     <img src="./img/group_patterns_GroupF_wes00.png" style="width: 50%; margin-bottom:25px">
     <h4 class="m-highlight-gray">Holmbeck+ (2019b)</h4>
     <aside class="notes">
+    -- Make Th and Eu a different color --
     For stars that show the entire r-process pattern, there is a variation from star to star in the actinide-to-lanthanide ratio.
     For example, in Reticiulum II, the "r-process dwarf galaxy," the one star where a thorium abundance could be measured shows a low actinide abundance.
     Most r-proces enhanced stars have a thorium abundance that approximately agrees with the Solar value, and some are enhanced in thorium, these actinide-boost stars.
@@ -173,6 +219,7 @@
     <div><video controls alt="test" src="./img/Ye.mp4" width="55%"></center></div>
     <p class="m-highlight-gray"> <sup>*</sup> Y<sub>e</sub> = [1+(n/p)]<sup>-1</sup> </p>
     <aside class="notes">
+    -- Just show the movie and "notice that as the material gets more and more n-rich, the actinides oscillate.. We can see this explicitly next.." --
     In an astrophysical r-process event, the initial electron fraction---or Ye---is one parameter that sensitively affects the final r-process abundances that are produced.
     Just as a reminder, a lower Ye means more neutron-rich, and higher Ye is more proton-rich
     and essentially sets the initial amount of neutrons that are available to participate in neutron-capture.
@@ -182,42 +229,50 @@
   
   <section class="rs">
     <h1>Actinide Production and Y<sub>e</sub></h1>
-    <p><br>Th and U robustly produced at very low Y<sub>e</sub></p>
+    <p><br>Th and U robustly produced (and oscillate) at very low Y<sub>e</sub></p>
     <img src="./img/Ye_korobkinrh_nbs50_frdm2012.png" alt="Ye" style="width: 50%">
     <h4 class="m-highlight-gray">Holmbeck+ (2019a)</h4>
     <aside class="notes">
+    -- In fact, this actinide production is so great, that **if you assume all the ejecta has that low Ye**, the actinide abundance would be so great that it doesn't agree with observation --
+    -- In simulation, we don't see a discrete --
     As a function of decreasing Ye, the actinide abundance begins and then varies, which we thought could explain the actinide-boost.
     It turns out that the actinide production picking a single Ye is too great to explain actinide-boost stars.
     So instead of picking one Ye, we chose a combination.
     </aside>
   </section>
   
+  <!--
   <section class="rs">
     <h1>Actinide Boost Stars</h1>
     <p><br>Abundances of stars enhanced with Th and U can be reproduced by a <span class="m-highlight-red"><b>combination</b></span> of Y<sub>e</sub></p>
     <img src="./img/ab_korobkinrh_nbs50_frdm2012_AD_J095442.png" alt="Ye" style="width: 50%">
     <h4 class="m-highlight-gray">Holmbeck+ (2019a)</h4>
     <aside class="notes">
+    -- References for the ejecta distribution -- 
+    -- Don't focus on the bad (non-actinide-boost). Can we explain ALL actinide enrichments in this way, or do we need another site? -- 
     This combination of Ye was based off of literature estimates for NSM ejecta.
     Each of these blue and green lines is the final abundance pattern from choosing a single initial Ye.
     The red is after combining all of those patterns using some weighting motivated by literature.
     In general, the combination of Ye does much better than any single Ye and gets pretty close to explaining actinide-boost stars.
     </aside>
   </section>
+  -->
   
   <section class="rs">
-    <h1> </h1>
-    <br>
-    <img src="./img/AD_method_overview.png" style="width: 90%"/>
+    <h1>Actinide Boost Stars</h1>
+    <p><br>Abundances of stars enhanced with Th and U can be reproduced by a <span class="m-highlight-red"><b>combination</b></span> of Y<sub>e</sub></p>
+    <img src="./img/AD_method2.png" style="width: 85%"/>
     <aside class="notes">
+    -- Remove previous slide --
+    -- "Can we make a more general argument? --
     To recap, we began with a mass distribution from literature and then built a combination that can explain actinide-boost stars.
     </aside>
   </section>
 
   <section class="rs">
-    <h1>Can we go backwards?</h1>
-    <br>
-    <img src="./img/ADM_method_overview.png" style="width: 90%"/>
+    <h1>Going backwards</h1>
+    <p><br>What would the abundances themselves suggest for this ejecta distribution?</p>
+    <img src="./img/ADM_method2.png" style="width: 85%"/>
     <aside class="notes">
     What if we go backwards? Let's star from the observations and build a mass ejecta distribution that characterizes the r-process event needed in order to reproduce those abundances.
     </aside>
@@ -226,10 +281,11 @@
   <section class="rs">
     <h1>Actinide-Dilution with Matching Model</h1>
     <p><br>Builds <span class="m-highlight-blue"><b>empirical</b></span> mass ejecta distributions as a function of Y<sub>e</sub> (0.005-0.450)</p>
-    <p>To explain entire pattern from Zr to U</p>
+    <p>To explain entire pattern using <span class="m-highlight-purple"><b>Zr</b></span>, <span class="m-highlight-purple"><b>Dy</b></span>, and <span class="m-highlight-purple"><b>Th only</b></span></p>
     <br>
     <video controls alt="test" src="./img/ADM_GroupF_s040t020y200_nbs50_frdm2012.mp4" width="80%">
     <aside class="notes">
+      -- Note that you're only fitting three elements --
       So to investigate this we built a Monte Carlo model that characterizes the r-process event by
 	  building an ejecta mass distribution as a function of initial Ye.
 	  We run dozens of r-process nucleosynthesis simulations, each starting at a different Ye, 
@@ -258,10 +314,12 @@
   <section>
     <section>
     <h1>Empirical ejecta mass distributions</h1>
-    <p><br>Distributions differ in <span class="m-highlight-purple"><b>very low-Y<sub>e</sub></b></span> component</p>
-    <img src="./img/mass_frdm2012_jina2019.png" alt="Ye" style="width: 50%; margin-top:10px">
+    <p><br>Distributions differ in <span class="m-highlight-purple"><b>very low-Y<sub>e</sub></b></span> region</p>
+    <img src="./img/group_patterns_ADM.png" style="vertical-align: middle; width:37%"> 
+    &emsp; &emsp; &emsp; <img src="./img/mass_frdm2012_jina2019.png" style="vertical-align: middle; width:46%"> 
     <h4 class="m-highlight-gray">Holmbeck+ (2019b)</h4>
 	<aside class="notes">
+	  -- Put ADM pattern on the abundance pattern plots for all three groups --
 	  And these are the ejecta mass distributions that we built by working backwards and requiring
 	  the r-process event to match to observed stellar abundances.
 	  The mass distribution for an actinide-poor case leads to less material in this very neutron-rich region,
@@ -286,6 +344,8 @@
     <img src="./img/lowYe_frac_frdm2012_obs.png" alt="Ye" style="width: 60%">
     <h4 class="m-highlight-gray">Holmbeck+ (2019b)</h4>
     <aside class="notes">
+      -- Take out blue dots; just use lines --
+      -- "This is accommodated in a NSM model by different levels of dynamical ejecta" --
       We can quantify the contribution from the very-low Ye component. This plot is a little complicated, but basically, we ran a series of these simulations where we varied the required actinide contribution, and this plots just shows what percentage of the total mass is allowed to be in that low-Ye tail.
       Notice a few things. First, the distribution of stellar points. Each of these gray points is where we ran the ADM model for a single star instead of a whole group. The actinide-boost stars---if you were to project this into a histogram---are just at the tail of an otherwise normal distribution.
       Secondly, the low-Ye contribution that we get from the AD+M mass results varies smoothly from actinide-poor to actinide-normal to actinide-boost.
@@ -317,7 +377,7 @@
   </section>
 
   <section>
-  	<h1>NSM lightcurve</h1>
+  	<h1>GW170817 lightcurve</h1>
   	<p><br>Lanthanide-poor <span class="m-highlight-blue">blue</span> ejecta + Lanthanide-rich <span class="m-highlight-red">red</span> ejecta</p>
     <img src="./img/cowperthwaite2017.png" style="width:70%">
     <h4 class="m-highlight-gray">Cowperthwaite+ (2017)</h4>
@@ -332,8 +392,31 @@
 
   <section>
   	<h1>Two ejecta components</h1>
-    <img src="./img/ADM_xlan1.png" style="width: 100%; margin-top=-100px">
+  	<br>
+    <div class="row">
+     <div class="column" style="width:25%">
+       <h3>Stellar Abundances</h3>
+       <span class="m-highlight-blue"><br><em>X</em><sub>lan</sub> = 10<sup>-3.8</sup></span>
+       <span class="m-highlight-red"><br><em>X</em><sub>lan</sub> = 10<sup>-0.8</sup></span>
+       <span><br><em>m</em><sub>red</sub> / <em>m</em><sub>blue</sub> = 1.6</span>
+       <h4 class="m-highlight-gray"><br>Holmbeck+ (2018)</h4>
+     </div>
+     <div class="column" style="width:50%">
+       <img src="./img/Ye_xlan_RetII.png" alt="J095442" style="width: 100%">
+     </div>
+     <div class="column" style="width:25%">
+       <h3>GW170817</h3>
+       <span class="m-highlight-blue"><br><em>X</em><sub>lan</sub> = 10<sup>-4</sup></span>
+       <span class="m-highlight-red"><br><em>X</em><sub>lan</sub> = 10<sup>-1.5</sup></span>
+       <span><br><em>m</em><sub>red</sub> / <em>m</em><sub>blue</sub> = 1.6</span>
+       <h4 class="m-highlight-gray"><br>Kasen+ (2017)</h4>
+     </div>
+    </div>
+
 	<aside class="notes">
+	  -- Be specific about what observations (spectroscopic); emphasize that they are completely independent --
+	  -- "This is what we come up with just from stellar abundances" --
+	  -- Change label -- 
 	  So we split our mass distribution for RetII into these blue and red components and find the lanthanide mass
 	  fractions and the mass ratio between them. And we get numbers. Remember this is a mass distribution built from observations.
     </aside>
@@ -349,9 +432,10 @@
   </section>
 
   <section>
-    <h1>Results derived from <em>r</em>-enhanced stars <br>agree<sup>*</sup> with an NSM observation</h1>
-    <h2 class="fragment"><br>Further evidence that an NSM produced<br>the material in <em>r</em>-enhanced stars like Ret II</h2>
+    <h1>Results derived from <em>r</em>-enhanced stars are<br>consistent with the GW170818 kilonova</h1>
+    <h2 class="fragment"><br>Further evidence supporting that an NSM produced<br>the material in <em>r</em>-enhanced stars like Ret II</h2>
 	<aside class="notes">
+	 -- Emphasize that it doesn't have to be a merger; you can get a similar distribution from, e.g., collapsar --
 	  What we derived from observations of stars is similar to results derived from a NSM observation.
 	  This could suggest that the r-process enhanced stars like Ret II were indeed enriched by a NSM event.
     </aside>
