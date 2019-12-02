@@ -495,7 +495,7 @@
 
   <section class="rs">
     <h1>What is the source of this actinide-boost?</h1>
-    <br><h2>Nuclear or Astrophysical?</h2>
+    <br><h2>Nuclear</span> or Astrophysical?</h2>
     <aside class="notes">
       We choose a neutron star merger scenario since we expect robust actinide production there.
     </aside>
@@ -573,9 +573,10 @@
 
   <section class="rs">
     <h1>Fission Cycling</h1>
-    <p><br>Only a <span class="m-highlight-purple"><b>narrow Y<sub>e</sub> range</b></span> reproduces observations of Th and U </p>
-    <img src="./img/Ye_korobkinrh_nbs50_frdm2012.png" alt="Ye" style="width: 50%">
-    <h4 class="m-highlight-gray">Holmbeck+ (2019a)</h4>
+    <p><br>Actinides <span class="m-highlight-purple"><b>over-produced</b></span> in fission cycling conditions</p>
+    <span class="m-highlight-gray"><- proton-rich</span>
+	<img src="./img/Ye_korobkinrh_nbs50_frdm2012.png" alt="Ye" style="width: 50%">
+    <span class="m-highlight-gray">neutron-rich -></span>
     <!-- In fact, this actinide production is so great, that **if you assume all the ejecta has that low Ye**, the actinide abundance would be so great that it doesn't agree with observation -->
     <!-- In simulation, we don't see a discrete -->
     <aside class="notes">
@@ -589,9 +590,10 @@
 
   <section class="rs">
     <h1>Fission Cycling</h1>
-    <p><br>Only a <span class="m-highlight-purple"><b>narrow Y<sub>e</sub> range</b></span> reproduces observations of Th and U </p>
+    <p><br>Actinides <span class="m-highlight-purple"><b>over-produced</b></span> in fission cycling conditions</p>
+    <span class="m-highlight-gray"><- proton-rich</span>
     <img src="./img/Ye_korobkinrh_nbs50_frdm2012_obs.png" alt="Ye" style="width: 50%">
-    <h4 class="m-highlight-gray">Holmbeck+ (2019a)</h4>
+    <span class="m-highlight-gray">neutron-rich -></span>
     <!-- In fact, this actinide production is so great, that **if you assume all the ejecta has that low Ye**, the actinide abundance would be so great that it doesn't agree with observation -->
     <!-- In simulation, we don't see a discrete -->
     <aside class="notes">
@@ -662,6 +664,7 @@
     <h1>Beta-Decay Rates?</h1>
     <p><br>&#x3B2;-decay rates from <b><span class="m-highlight-pink">Marketin</span></b>+ (2016) are over 10x faster at N>126</p>
     <img src="./img/betarates_frdm2012_marketin.png" alt="Ye" style="width: 80%">
+    <h4 class="m-highlight-gray">Holmbeck+ (2019a)</h4>
     <aside class="notes">
     </aside>
   </section>
@@ -717,7 +720,6 @@
 	<aside class="notes">
 	</aside>
   </section>
-  
 
   <!--
   <section class="rs">
@@ -1078,6 +1080,7 @@
    touch: true,
    pdfMaxPagesPerSlide: 1,
    transition: 'none', // none/fade/slide/convex/concave/zoom
+   transitionSpeed: 'fast',
 
    math: {
     // mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
