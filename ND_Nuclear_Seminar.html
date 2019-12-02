@@ -804,7 +804,8 @@
     <h4 class="m-highlight-gray"><br>Metzger & Fernandez (2014)</h4>
     <aside class="notes">
      Let's go back to a NSM. In all those simulations, I assumed this very low-Ye dynamical ejecta.
-     But in a NSM, material can also be ejected by the accretion disk, which is slightly less neutron rich.
+     In a NSM, material can also be ejected by the accretion disk, which is slightly less neutron rich.
+     So the wind might not have as much fission cycling as this tidal ejecta.
     </aside>
   </section>
 
@@ -814,20 +815,22 @@
     <h1>Astrophysical Mixture?</h1>
     <br>
      <div class="column">
-       <img src="./img/Ye_korobkinrh_nbs50_frdm2012_loge.png" style="width: 83%">
+       <img src="./img/Ye_korobkinrh_nbs50_frdm2012.png" style="width: 85%">
      </div>
      <div class="column">
        <div style="position:absolute;margin-top:110px;height:250px">
        <span style = "font-size:60px;color:red">&#215;</span></div>
        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <img src="./img/AD_mass_dist.png" style="width: 87%">
+       <img src="./img/AD_mass_dist.png" style="width: 85%">
      </div>
     </div>
     <aside class="notes">
      Well, I already have the abundance patterns from a bunch of different values of Ye.
      So instead of saying that all the ejecta has ONE value of Ye, I chose a distribution 
-     of Ye from a NSM that was motivated by literature and observations of the GW170817
+     of Ye that was motivated by literature studies of NSMs and observations of the GW170817
      kilonova, and multiplied the abundances by that mass distribution.
+     This mass distribution has some fission-cycling component, but most of the mass
+     is from the disk wind with no fission cycling.
     </aside>
   </section>
 
@@ -837,7 +840,7 @@
     <img src="./img/AD_method2.png" style="width: 85%"/>
     <aside class="notes">
       This combination of Ye---in red here---does much better matching to actinide-boost abundances than any single Ye---in blue.
-      Can we make a more general argument? [NEXT]
+      Can we make a more general argument?
     </aside>
   </section>
 
@@ -955,16 +958,16 @@
     </aside>
     </section>
 
-  <section>
-    <section>
+  <section class="rs">
     <h1>Nuclear Physics Variations</h1>
     <img src="./img/mass_nbs50_all_RetII_hfb17.png" alt="Ye" style="width: 50%; margin-top:30px">
     <h4 class="m-highlight-gray">Holmbeck+ (2019b)</h4>
 	<aside class="notes">
+	 I also repeated the entire process using two different mass models.
     </aside>
-    </section>
+  </section>
 
-    <section>
+  <section class="rs">
     <h1>Astrophysical Variations</h1>
     <img src="./img/mass_mix3_nbs50_frdm2012_RetII.png" alt="Ye" style="width: 50%; margin-top:30px">
     <h4 class="m-highlight-gray">Holmbeck+ (2019b)</h4>
@@ -980,13 +983,11 @@
     <img src="./img/lowYe_frac_variations_hfb17.png" alt="Ye" style="width: 60%">
     <h4 class="m-highlight-gray">Holmbeck+ (2019b)</h4>
     <aside class="notes">
-      We can quantify the contribution from the very-low Ye component. 
-      This plot is a little complicated. Basically, we ran a series of these simulations where we varied the required actinide contribution systematically, 
-      and this axis shows what percentage of the total ejected mass is allowed to be in that low-Ye tail.
-      The gray dots show what the low-Ye contribution would be for individual stars after running this model.
-      Notice a few things. First, the low-Ye contribution that we get from the ADM results varies smoothly from actinide-poor to actinide-boost. 
-      Secondly, the actinide-boost stars are just at the tail of an otherwise normal/Gaussian distribution.
-      To explain the majority of the range of actinide abundances, the low-Ye ejecta need only be between 10 and 30% of the total ejected mass,
+      We can quantify the contribution from the fission cycling component. 
+      Basically, we ran a series of these simulations where we varied the required actinide contribution systematically, 
+      and this axis shows what percentage of the total ejected mass is allowed to be fission cycling.
+      I noticed that the fission-cycling contribution that we get from the ADM results varies smoothly from actinide-poor to actinide-boost. 
+      To explain the majority of the range of actinide abundances, the low-Ye, fission-cycling ejecta need only be between 10 and 30% of the total ejected mass,
       which isn't too significance of a difference.
       So what does this imply?
     </aside>
